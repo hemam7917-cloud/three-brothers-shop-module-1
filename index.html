@@ -599,34 +599,602 @@
         <!-- Main Content -->
         <main id="main-content">
 
-            <section
-                class="hero-placeholder"
-                aria-labelledby="hero-title"
+           <!-- =======================================================
+     HERO SECTION
+======================================================== -->
+
+<section
+    class="hero"
+    aria-labelledby="hero-section-title"
+>
+    <h1
+        id="hero-section-title"
+        class="visually-hidden"
+    >
+        Featured products, campaigns and special offers
+    </h1>
+
+    <div class="container hero__container">
+
+        <!-- ===============================================
+             MAIN HERO CONTENT
+        ================================================ -->
+
+        <div class="hero__main">
+
+            <!-- ===========================================
+                 HERO SLIDER
+            ============================================ -->
+
+            <div
+                class="hero-slider"
+                data-hero-slider
+                aria-roledescription="carousel"
+                aria-label="Featured marketplace campaigns"
             >
-                <div class="container hero-placeholder__container">
 
-                    <p class="hero-placeholder__eyebrow">
-                        Three Brothers Shop Plus
-                    </p>
+                <!-- =======================================
+                     SLIDER VIEWPORT
+                ======================================== -->
 
-                    <h1 id="hero-title">
-                        Professional Multi-Vendor Marketplace
-                    </h1>
+                <div class="hero-slider__viewport">
 
-                    <p>
-                        Discover quality products from trusted sellers at
-                        competitive prices.
-                    </p>
-
-                    <a
-                        class="button button--primary"
-                        href="pages/products.html"
+                    <div
+                        class="hero-slider__track"
+                        data-hero-track
                     >
-                        Start Shopping
-                    </a>
 
+                        <!-- =================================
+                             SLIDE 01
+                        ================================== -->
+
+                        <article
+                            class="hero-slide hero-slide--primary is-active"
+                            data-hero-slide
+                            aria-hidden="false"
+                        >
+                            <div class="hero-slide__content">
+
+                                <span class="hero-slide__eyebrow">
+                                    New season collection
+                                </span>
+
+                                <h2 class="hero-slide__title">
+                                    Discover everything you need
+                                    at one trusted marketplace
+                                </h2>
+
+                                <p class="hero-slide__description">
+                                    Shop quality products from trusted sellers
+                                    with competitive prices, secure checkout and
+                                    reliable delivery.
+                                </p>
+
+                                <div class="hero-slide__actions">
+
+                                    <a
+                                        class="button button--primary hero-slide__button"
+                                        href="pages/products.html"
+                                    >
+                                        Shop now
+
+                                        <span aria-hidden="true">
+                                            →
+                                        </span>
+                                    </a>
+
+                                    <a
+                                        class="button button--outline hero-slide__button"
+                                        href="pages/categories.html"
+                                    >
+                                        Explore categories
+                                    </a>
+
+                                </div>
+
+                                <ul
+                                    class="hero-slide__benefits"
+                                    aria-label="Shopping benefits"
+                                >
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Secure payment
+
+                                    </li>
+
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Trusted sellers
+
+                                    </li>
+
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Fast delivery
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div
+                                class="hero-slide__media"
+                                aria-hidden="true"
+                            >
+                                <div class="hero-slide__image-wrapper">
+
+                                    <img
+                                        class="hero-slide__image"
+                                        src="assets/images/hero/hero-1.jpg"
+                                        alt=""
+                                        width="720"
+                                        height="620"
+                                        loading="eager"
+                                        fetchpriority="high"
+                                    >
+
+                                </div>
+
+                                <div class="hero-slide__floating-card">
+
+                                    <span
+                                        class="hero-slide__floating-icon"
+                                        aria-hidden="true"
+                                    >
+                                        ★
+                                    </span>
+
+                                    <div>
+                                        <strong>
+                                            Top-rated products
+                                        </strong>
+
+                                        <span>
+                                            Selected for quality
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- =================================
+                             SLIDE 02
+                        ================================== -->
+
+                        <article
+                            class="hero-slide hero-slide--secondary"
+                            data-hero-slide
+                            aria-hidden="true"
+                        >
+                            <div class="hero-slide__content">
+
+                                <span class="hero-slide__eyebrow">
+                                    Limited-time campaign
+                                </span>
+
+                                <h2 class="hero-slide__title">
+                                    Upgrade your lifestyle with
+                                    smart technology
+                                </h2>
+
+                                <p class="hero-slide__description">
+                                    Explore smartphones, computers, accessories
+                                    and modern electronics from popular brands
+                                    and verified stores.
+                                </p>
+
+                                <div class="hero-slide__actions">
+
+                                    <a
+                                        class="button button--primary hero-slide__button"
+                                        href="pages/products.html?category=electronics"
+                                    >
+                                        Shop electronics
+
+                                        <span aria-hidden="true">
+                                            →
+                                        </span>
+                                    </a>
+
+                                    <a
+                                        class="button button--outline hero-slide__button"
+                                        href="pages/deals.html"
+                                    >
+                                        View deals
+                                    </a>
+
+                                </div>
+
+                                <ul
+                                    class="hero-slide__benefits"
+                                    aria-label="Electronics shopping benefits"
+                                >
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Genuine products
+
+                                    </li>
+
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Seller warranty
+
+                                    </li>
+
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Best-value deals
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div
+                                class="hero-slide__media"
+                                aria-hidden="true"
+                            >
+                                <div class="hero-slide__image-wrapper">
+
+                                    <img
+                                        class="hero-slide__image"
+                                        src="assets/images/hero/hero-2.jpg"
+                                        alt=""
+                                        width="720"
+                                        height="620"
+                                        loading="lazy"
+                                    >
+
+                                </div>
+
+                                <div class="hero-slide__discount-badge">
+
+                                    <strong>
+                                        Up to 40%
+                                    </strong>
+
+                                    <span>
+                                        selected items
+                                    </span>
+
+                                </div>
+                            </div>
+                        </article>
+
+                        <!-- =================================
+                             SLIDE 03
+                        ================================== -->
+
+                        <article
+                            class="hero-slide hero-slide--accent"
+                            data-hero-slide
+                            aria-hidden="true"
+                        >
+                            <div class="hero-slide__content">
+
+                                <span class="hero-slide__eyebrow">
+                                    Everyday essentials
+                                </span>
+
+                                <h2 class="hero-slide__title">
+                                    Fresh groceries and daily needs
+                                    delivered conveniently
+                                </h2>
+
+                                <p class="hero-slide__description">
+                                    Order household essentials, groceries,
+                                    personal-care items and everyday products
+                                    from one convenient place.
+                                </p>
+
+                                <div class="hero-slide__actions">
+
+                                    <a
+                                        class="button button--primary hero-slide__button"
+                                        href="pages/products.html?category=groceries"
+                                    >
+                                        Shop groceries
+
+                                        <span aria-hidden="true">
+                                            →
+                                        </span>
+                                    </a>
+
+                                    <a
+                                        class="button button--outline hero-slide__button"
+                                        href="pages/offers.html"
+                                    >
+                                        See special offers
+                                    </a>
+
+                                </div>
+
+                                <ul
+                                    class="hero-slide__benefits"
+                                    aria-label="Grocery shopping benefits"
+                                >
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Fresh products
+
+                                    </li>
+
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Daily discounts
+
+                                    </li>
+
+                                    <li class="hero-slide__benefit">
+
+                                        <span
+                                            class="hero-slide__benefit-icon"
+                                            aria-hidden="true"
+                                        >
+                                            ✓
+                                        </span>
+
+                                        Convenient delivery
+
+                                    </li>
+                                </ul>
+
+                            </div>
+
+                            <div
+                                class="hero-slide__media"
+                                aria-hidden="true"
+                            >
+                                <div class="hero-slide__image-wrapper">
+
+                                    <img
+                                        class="hero-slide__image"
+                                        src="assets/images/hero/hero-3.jpg"
+                                        alt=""
+                                        width="720"
+                                        height="620"
+                                        loading="lazy"
+                                    >
+
+                                </div>
+
+                                <div class="hero-slide__delivery-card">
+
+                                    <span
+                                        class="hero-slide__delivery-icon"
+                                        aria-hidden="true"
+                                    >
+                                        🚚
+                                    </span>
+
+                                    <div>
+                                        <strong>
+                                            Reliable delivery
+                                        </strong>
+
+                                        <span>
+                                            Straight to your doorstep
+                                        </span>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </article>
+
+                    </div>
                 </div>
-            </section>
+
+                <!-- =======================================
+                     SLIDER NAVIGATION BUTTONS
+                ======================================== -->
+
+                <button
+                    class="hero-slider__control hero-slider__control--previous"
+                    type="button"
+                    data-hero-previous
+                    aria-label="Show previous slide"
+                >
+                    <span aria-hidden="true">
+                        ‹
+                    </span>
+                </button>
+
+                <button
+                    class="hero-slider__control hero-slider__control--next"
+                    type="button"
+                    data-hero-next
+                    aria-label="Show next slide"
+                >
+                    <span aria-hidden="true">
+                        ›
+                    </span>
+                </button>
+
+                <!-- =======================================
+                     SLIDER STATUS
+                ======================================== -->
+
+                <div
+                    class="hero-slider__status visually-hidden"
+                    data-hero-status
+                    aria-live="polite"
+                    aria-atomic="true"
+                >
+                    Slide 1 of 3
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- Right-side promotional cards will be added
+             in Lesson 4 – Part 1B. -->
+
+<!-- =======================================================
+     HERO SIDEBAR
+======================================================== -->
+
+<aside
+    class="hero-sidebar"
+    aria-label="Featured offers"
+>
+
+    <!-- CARD 01 -->
+
+    <article class="hero-offer-card">
+
+        <span class="hero-offer-card__badge">
+            HOT DEAL
+        </span>
+
+        <h3 class="hero-offer-card__title">
+            Electronics Festival
+        </h3>
+
+        <p class="hero-offer-card__description">
+            Save up to 40% on smartphones,
+            laptops and accessories.
+        </p>
+
+        <a
+            href="pages/deals.html"
+            class="hero-offer-card__button"
+        >
+            Shop Now →
+        </a>
+
+    </article>
+
+    <!-- CARD 02 -->
+
+    <article
+        class="hero-offer-card
+               hero-offer-card--secondary"
+    >
+
+        <span class="hero-offer-card__badge">
+            FREE DELIVERY
+        </span>
+
+        <h3 class="hero-offer-card__title">
+            Grocery Collection
+        </h3>
+
+        <p class="hero-offer-card__description">
+            Fresh groceries delivered safely
+            to your doorstep.
+        </p>
+
+        <a
+            href="pages/products.html?category=groceries"
+            class="hero-offer-card__button"
+        >
+            Explore →
+        </a>
+
+    </article>
+
+</aside>
+
+</div>
+
+<!-- =======================================================
+     HERO SLIDER INDICATORS
+======================================================== -->
+
+<div
+    class="hero-slider__pagination"
+    role="tablist"
+    aria-label="Hero Slider Pagination"
+>
+
+    <button
+        class="hero-slider__dot is-active"
+        data-slide="0"
+        aria-label="Slide 1"
+        aria-selected="true"
+        role="tab"
+    ></button>
+
+    <button
+        class="hero-slider__dot"
+        data-slide="1"
+        aria-label="Slide 2"
+        aria-selected="false"
+        role="tab"
+    ></button>
+
+    <button
+        class="hero-slider__dot"
+        data-slide="2"
+        aria-label="Slide 3"
+        aria-selected="false"
+        role="tab"
+    ></button>
+
+</div>
+
+</section>
+
+    </div>
+</section>
 
             <section
                 class="section-placeholder"
