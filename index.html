@@ -2135,10 +2135,86 @@ Lesson 2 Part 2 Starts Here
 </section>
 
 <!-- ==========================================
-
-Lesson 2 Part 3C Starts Here
-
+     NEWSLETTER
 ========================================== -->
+
+<section
+    class="newsletter"
+    aria-labelledby="newsletter-title"
+>
+    <div class="container newsletter__container">
+
+        <div class="newsletter__content">
+
+            <p class="newsletter__eyebrow">
+                Stay Connected
+            </p>
+
+            <h2
+                class="newsletter__title"
+                id="newsletter-title"
+            >
+                Get Exclusive Offers in Your Inbox
+            </h2>
+
+            <p class="newsletter__description">
+                Subscribe to receive product updates, special discounts,
+                flash-sale alerts and helpful shopping information.
+            </p>
+
+        </div>
+
+        <form
+            class="newsletter__form"
+            action="#"
+            method="post"
+            data-newsletter-form
+        >
+            <div class="newsletter__field">
+
+                <label
+                    class="visually-hidden"
+                    for="newsletter-email"
+                >
+                    Email address
+                </label>
+
+                <input
+                    class="newsletter__input"
+                    id="newsletter-email"
+                    name="email"
+                    type="email"
+                    placeholder="Enter your email address"
+                    autocomplete="email"
+                    inputmode="email"
+                    maxlength="254"
+                    required
+                >
+
+                <button
+                    class="newsletter__button"
+                    type="submit"
+                >
+                    Subscribe
+                </button>
+
+            </div>
+
+            <p
+                class="newsletter__message"
+                aria-live="polite"
+                data-newsletter-message
+            ></p>
+
+            <p class="newsletter__privacy">
+                By subscribing, you agree to receive promotional emails.
+                You can unsubscribe at any time.
+            </p>
+
+        </form>
+
+    </div>
+</section>
 
 </main>
 
@@ -2146,9 +2222,615 @@ Lesson 2 Part 3C Starts Here
      FOOTER
 ========================================== -->
 
-<footer>
+<footer
+    class="footer"
+    aria-labelledby="footer-brand-title"
+>
+    <!-- Main Footer -->
+
+    <div class="footer__main">
+
+        <div class="container footer__grid">
+
+            <!-- Brand Information -->
+
+            <section class="footer__column footer__column--brand">
+
+                <a
+                    class="footer-brand"
+                    href="index.html"
+                    aria-label="Three Brothers Shop Plus home"
+                >
+                    <span
+                        class="footer-brand__primary"
+                        id="footer-brand-title"
+                    >
+                        Three Brothers
+                    </span>
+
+                    <span class="footer-brand__secondary">
+                        Shop Plus
+                    </span>
+                </a>
+
+                <p class="footer__about">
+                    Three Brothers Shop Plus is a customer-focused online
+                    marketplace offering groceries, household essentials,
+                    personal-care products and more at competitive prices.
+                </p>
+
+                <address class="footer-contact">
+
+                    <ul class="footer-contact__list">
+
+                        <li class="footer-contact__item">
+
+                            <span
+                                class="footer-contact__icon"
+                                aria-hidden="true"
+                            >
+                                &#128205;
+                            </span>
+
+                            <span>
+                                Ghatail, Tangail, Bangladesh
+                            </span>
+
+                        </li>
+
+                        <li class="footer-contact__item">
+
+                            <span
+                                class="footer-contact__icon"
+                                aria-hidden="true"
+                            >
+                                &#9742;
+                            </span>
+
+                            <a href="tel:+8801000000000">
+                                +880 18375033
+                            </a>
+
+                        </li>
+
+                        <li class="footer-contact__item">
+
+                            <span
+                                class="footer-contact__icon"
+                                aria-hidden="true"
+                            >
+                                &#9993;
+                            </span>
+
+                            <a href="mailto:support@threebrothersshop.com">
+                                support@threebrothersshop.com
+                            </a>
+
+                        </li>
+
+                    </ul>
+
+                </address>
+
+            </section>
+
+            <!-- Shopping Links -->
+
+            <nav
+                class="footer__column"
+                aria-labelledby="footer-shopping-title"
+            >
+                <h2
+                    class="footer__heading"
+                    id="footer-shopping-title"
+                >
+                    Shopping
+                </h2>
+
+                <ul class="footer__links">
+
+                    <li>
+                        <a href="pages/products.html">
+                            All Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pages/category.html">
+                            Product Categories
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#flash-sale-title">
+                            Flash Sale
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#featured-products-title">
+                            Featured Products
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pages/wishlist.html">
+                            My Wishlist
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pages/cart.html">
+                            Shopping Cart
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Customer Service -->
+
+            <nav
+                class="footer__column"
+                aria-labelledby="footer-service-title"
+            >
+                <h2
+                    class="footer__heading"
+                    id="footer-service-title"
+                >
+                    Customer Service
+                </h2>
+
+                <ul class="footer__links">
+
+                    <li>
+                        <a href="pages/contact.html">
+                            Contact Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Help Center
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Track Your Order
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Delivery Information
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Returns &amp; Refunds
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Frequently Asked Questions
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Company Links -->
+
+            <nav
+                class="footer__column"
+                aria-labelledby="footer-company-title"
+            >
+                <h2
+                    class="footer__heading"
+                    id="footer-company-title"
+                >
+                    Company
+                </h2>
+
+                <ul class="footer__links">
+
+                    <li>
+                        <a href="#">
+                            About Us
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Careers
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pages/seller.html">
+                            Become a Seller
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Privacy Policy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms &amp; Conditions
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Cookie Policy
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+            <!-- Account Links -->
+
+            <nav
+                class="footer__column"
+                aria-labelledby="footer-account-title"
+            >
+                <h2
+                    class="footer__heading"
+                    id="footer-account-title"
+                >
+                    My Account
+                </h2>
+
+                <ul class="footer__links">
+
+                    <li>
+                        <a href="pages/login.html">
+                            Sign In
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pages/register.html">
+                            Create Account
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Order History
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Saved Addresses
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="pages/wishlist.html">
+                            Wishlist
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Account Settings
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- Footer Features -->
+
+    <div class="footer-features">
+
+        <div class="container footer-features__grid">
+
+            <article class="footer-feature">
+
+                <span
+                    class="footer-feature__icon"
+                    aria-hidden="true"
+                >
+                    &#128666;
+                </span>
+
+                <div class="footer-feature__content">
+
+                    <h2 class="footer-feature__title">
+                        Fast Delivery
+                    </h2>
+
+                    <p class="footer-feature__description">
+                        Reliable delivery across Bangladesh
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="footer-feature">
+
+                <span
+                    class="footer-feature__icon"
+                    aria-hidden="true"
+                >
+                    &#128274;
+                </span>
+
+                <div class="footer-feature__content">
+
+                    <h2 class="footer-feature__title">
+                        Secure Payment
+                    </h2>
+
+                    <p class="footer-feature__description">
+                        Safe and protected payment process
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="footer-feature">
+
+                <span
+                    class="footer-feature__icon"
+                    aria-hidden="true"
+                >
+                    &#8635;
+                </span>
+
+                <div class="footer-feature__content">
+
+                    <h2 class="footer-feature__title">
+                        Easy Returns
+                    </h2>
+
+                    <p class="footer-feature__description">
+                        Simple return and refund support
+                    </p>
+
+                </div>
+
+            </article>
+
+            <article class="footer-feature">
+
+                <span
+                    class="footer-feature__icon"
+                    aria-hidden="true"
+                >
+                    &#128172;
+                </span>
+
+                <div class="footer-feature__content">
+
+                    <h2 class="footer-feature__title">
+                        Customer Support
+                    </h2>
+
+                    <p class="footer-feature__description">
+                        Helpful support whenever you need it
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+    <!-- Payment and Social Area -->
+
+    <div class="footer-extras">
+
+        <div class="container footer-extras__container">
+
+            <section
+                class="footer-payment"
+                aria-labelledby="payment-methods-title"
+            >
+                <h2
+                    class="footer-extras__heading"
+                    id="payment-methods-title"
+                >
+                    We Accept
+                </h2>
+
+                <ul
+                    class="footer-payment__list"
+                    aria-label="Accepted payment methods"
+                >
+                    <li class="footer-payment__item">
+                        Cash on Delivery
+                    </li>
+
+                    <li class="footer-payment__item">
+                        bKash
+                    </li>
+
+                    <li class="footer-payment__item">
+                        Nagad
+                    </li>
+
+                    <li class="footer-payment__item">
+                        Rocket
+                    </li>
+
+                    <li class="footer-payment__item">
+                        Visa
+                    </li>
+
+                    <li class="footer-payment__item">
+                        Mastercard
+                    </li>
+                </ul>
+
+            </section>
+
+            <nav
+                class="footer-social"
+                aria-labelledby="social-links-title"
+            >
+                <h2
+                    class="footer-extras__heading"
+                    id="social-links-title"
+                >
+                    Follow Us
+                </h2>
+
+                <ul class="footer-social__list">
+
+                    <li>
+                        <a
+                            class="footer-social__link"
+                            href="#"
+                            aria-label="Follow Three Brothers Shop Plus on Facebook"
+                            rel="noopener noreferrer"
+                        >
+                            Facebook
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="footer-social__link"
+                            href="#"
+                            aria-label="Follow Three Brothers Shop Plus on YouTube"
+                            rel="noopener noreferrer"
+                        >
+                            YouTube
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="footer-social__link"
+                            href="#"
+                            aria-label="Follow Three Brothers Shop Plus on Instagram"
+                            rel="noopener noreferrer"
+                        >
+                            Instagram
+                        </a>
+                    </li>
+
+                    <li>
+                        <a
+                            class="footer-social__link"
+                            href="#"
+                            aria-label="Follow Three Brothers Shop Plus on LinkedIn"
+                            rel="noopener noreferrer"
+                        >
+                            LinkedIn
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
+        </div>
+
+    </div>
+
+    <!-- Copyright -->
+
+    <div class="footer-bottom">
+
+        <div class="container footer-bottom__container">
+
+            <p class="footer-bottom__copyright">
+                &copy;
+                <span data-current-year>2026</span>
+                Three Brothers Shop Plus. All rights reserved.
+            </p>
+
+            <nav
+                class="footer-bottom__navigation"
+                aria-label="Legal navigation"
+            >
+                <ul class="footer-bottom__links">
+
+                    <li>
+                        <a href="#">
+                            Privacy
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Terms
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Accessibility
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="#">
+                            Sitemap
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+
+        </div>
+
+    </div>
 
 </footer>
+
+<!-- ==========================================
+     BACK TO TOP
+========================================== -->
+
+<button
+    class="back-to-top"
+    type="button"
+    aria-label="Back to top"
+    title="Back to top"
+    hidden
+    data-back-to-top
+>
+    <span aria-hidden="true">&uarr;</span>
+</button>
+
+<!-- ==========================================
+     ACCESSIBLE STATUS REGION
+========================================== -->
+
+<div
+    class="visually-hidden"
+    role="status"
+    aria-live="polite"
+    aria-atomic="true"
+    data-live-region
+></div>
+
 
 </div>
 
