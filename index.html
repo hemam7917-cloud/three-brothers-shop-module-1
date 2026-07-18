@@ -1359,812 +1359,368 @@ Lesson 2 Part 2 Starts Here
      FEATURED PRODUCTS
 ========================================== -->
 
+<!-- ==========================================================
+     FEATURED PRODUCTS
+========================================================== -->
+
 <section
-    class="section products-section"
-    aria-labelledby="featured-products-title"
->
+    class="products-section"
+    aria-labelledby="featured-products-title">
+
     <div class="container">
 
-        <header class="section-header">
+        <!-- ==========================
+             SECTION HEADER
+        =========================== -->
 
-            <div class="section-header__content">
+        <header class="products-section__header">
 
-                <p class="section-header__eyebrow">
-                    Recommended for you
-                </p>
+            <div>
 
                 <h2
-                    class="section-header__title"
                     id="featured-products-title"
-                >
+                    class="products-section__title">
+
                     Featured Products
+
                 </h2>
 
-                <p class="section-header__description">
-                    Discover quality products selected for value,
-                    freshness and everyday convenience.
+                <p class="products-section__subtitle">
+
+                    Discover our most popular daily essentials at the
+                    best prices.
+
                 </p>
 
             </div>
 
             <a
-                class="section-header__link"
-                href="pages/products.html"
-                aria-label="View all featured products"
-            >
+                href="products.html"
+                class="products-section__link">
+
                 View All Products
-                <span aria-hidden="true">&rarr;</span>
+
             </a>
 
         </header>
 
-        <div
-            class="product-grid"
-            data-product-grid
-        >
+        <!-- ==========================
+             PRODUCT GRID
+        =========================== -->
 
-            <!-- Product 1 -->
+        <div class="products-grid">
+
+            <!-- =====================================
+                 PRODUCT 1
+            ====================================== -->
 
             <article
-                class="product-card"
-                data-product-id="product-001"
-            >
-                <div class="product-card__media">
+                class="product-card">
 
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-001"
-                        aria-label="View Miniket Premium Rice"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/miniket-rice.jpg"
-                            alt="Miniket premium rice 5 kilogram pack"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
+                <span class="product-card__badge">
 
-                    <span class="product-card__badge">
-                        14% Off
-                    </span>
+                    -20%
 
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Miniket Premium Rice to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
+                </span>
 
-                </div>
+                <button
+                    class="product-card__wishlist"
+                    type="button"
+                    aria-label="Add Premium Miniket Rice to wishlist">
+
+                    ❤
+
+                </button>
+
+                <a
+                    href="product-details.html?id=1"
+                    class="product-card__image">
+
+                    <img
+                        src="assets/images/products/rice.jpg"
+                        alt="Premium Miniket Rice"
+                        loading="lazy"
+                        decoding="async"
+                        width="500"
+                        height="500">
+
+                </a>
 
                 <div class="product-card__content">
 
-                    <p class="product-card__category">
-                        Rice &amp; Grains
-                    </p>
-
                     <h3 class="product-card__title">
 
-                        <a href="pages/product.html?id=product-001">
-                            Miniket Premium Rice — 5 kg
+                        <a href="product-details.html?id=1">
+
+                            Premium Miniket Rice 25kg
+
                         </a>
 
                     </h3>
 
                     <div
                         class="product-card__rating"
-                        aria-label="Rated 4.8 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
+                        aria-label="Rated 4.8 out of 5">
 
-                        <span class="product-card__review-count">
-                            (128)
-                        </span>
-                    </div>
+                        ★★★★★
 
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳620
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳720
-                        </del>
+                        <span>(4.8)</span>
 
                     </div>
 
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
+                    <div class="product-card__price">
+
+                        <span class="product-card__price-current">
+
+                            ৳1,850
+
+                        </span>
+
+                        <span class="product-card__price-old">
+
+                            ৳2,300
+
+                        </span>
+
+                    </div>
 
                     <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-001"
-                        data-product-name="Miniket Premium Rice — 5 kg"
-                        data-product-price="620"
-                        data-product-image="assets/images/products/miniket-rice.jpg"
-                    >
+                        class="product-card__button"
+                        type="button">
+
                         Add to Cart
+
                     </button>
 
                 </div>
 
             </article>
 
-            <!-- Product 2 -->
+            <!-- PRODUCT 2 -->
 
-            <article
-                class="product-card"
-                data-product-id="product-002"
-            >
-                <div class="product-card__media">
+            <article class="product-card">
 
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-002"
-                        aria-label="View soybean cooking oil"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/soybean-oil.jpg"
-                            alt="Soybean cooking oil 5 litre bottle"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
+                <span class="product-card__badge">
 
-                    <span class="product-card__badge">
-                        8% Off
-                    </span>
+                    -15%
 
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Soybean Cooking Oil to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
+                </span>
 
-                </div>
+                <button
+                    class="product-card__wishlist"
+                    type="button"
+                    aria-label="Add Soybean Oil to wishlist">
+
+                    ❤
+
+                </button>
+
+                <a
+                    href="product-details.html?id=2"
+                    class="product-card__image">
+
+                    <img
+                        src="assets/images/products/oil.jpg"
+                        alt="Soybean Oil"
+                        loading="lazy"
+                        decoding="async"
+                        width="500"
+                        height="500">
+
+                </a>
 
                 <div class="product-card__content">
 
-                    <p class="product-card__category">
-                        Cooking Oil
-                    </p>
-
                     <h3 class="product-card__title">
 
-                        <a href="pages/product.html?id=product-002">
-                            Soybean Cooking Oil — 5 L
+                        <a href="product-details.html?id=2">
+
+                            Fresh Soybean Oil 5L
+
                         </a>
 
                     </h3>
 
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.7 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
+                    <div class="product-card__rating">
 
-                        <span class="product-card__review-count">
-                            (94)
-                        </span>
-                    </div>
+                        ★★★★☆
 
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳865
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳940
-                        </del>
+                        <span>(4.5)</span>
 
                     </div>
 
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
+                    <div class="product-card__price">
+
+                        <span class="product-card__price-current">
+
+                            ৳890
+
+                        </span>
+
+                        <span class="product-card__price-old">
+
+                            ৳1,050
+
+                        </span>
+
+                    </div>
 
                     <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-002"
-                        data-product-name="Soybean Cooking Oil — 5 L"
-                        data-product-price="865"
-                        data-product-image="assets/images/products/soybean-oil.jpg"
-                    >
+                        class="product-card__button"
+                        type="button">
+
                         Add to Cart
+
                     </button>
 
                 </div>
 
             </article>
 
-            <!-- Product 3 -->
+            <!-- PRODUCT 3 -->
 
-            <article
-                class="product-card"
-                data-product-id="product-003"
-            >
-                <div class="product-card__media">
+            <article class="product-card">
 
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-003"
-                        aria-label="View fresh potatoes"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/potato.jpg"
-                            alt="Fresh potatoes one kilogram"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
+                <span class="product-card__badge">
 
-                    <span class="product-card__badge">
-                        Fresh
-                    </span>
+                    New
 
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Fresh Potato to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
+                </span>
 
-                </div>
+                <button
+                    class="product-card__wishlist"
+                    type="button"
+                    aria-label="Add Fresh Apple to wishlist">
+
+                    ❤
+
+                </button>
+
+                <a
+                    href="product-details.html?id=3"
+                    class="product-card__image">
+
+                    <img
+                        src="assets/images/products/apple.jpg"
+                        alt="Fresh Apple"
+                        loading="lazy"
+                        decoding="async"
+                        width="500"
+                        height="500">
+
+                </a>
 
                 <div class="product-card__content">
 
-                    <p class="product-card__category">
-                        Fresh Vegetables
-                    </p>
-
                     <h3 class="product-card__title">
 
-                        <a href="pages/product.html?id=product-003">
-                            Fresh Potato — 1 kg
+                        <a href="product-details.html?id=3">
+
+                            Premium Fresh Apple 1kg
+
                         </a>
 
                     </h3>
 
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.6 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
+                    <div class="product-card__rating">
 
-                        <span class="product-card__review-count">
-                            (76)
-                        </span>
-                    </div>
+                        ★★★★★
 
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳65
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳72
-                        </del>
+                        <span>(5.0)</span>
 
                     </div>
 
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
+                    <div class="product-card__price">
 
-                    <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-003"
-                        data-product-name="Fresh Potato — 1 kg"
-                        data-product-price="65"
-                        data-product-image="assets/images/products/potato.jpg"
-                    >
-                        Add to Cart
-                    </button>
+                        <span class="product-card__price-current">
 
-                </div>
-
-            </article>
-
-            <!-- Product 4 -->
-
-            <article
-                class="product-card"
-                data-product-id="product-004"
-            >
-                <div class="product-card__media">
-
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-004"
-                        aria-label="View fresh apples"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/apple.jpg"
-                            alt="Fresh red apples one kilogram"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
-
-                    <span class="product-card__badge">
-                        10% Off
-                    </span>
-
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Fresh Red Apple to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
-
-                </div>
-
-                <div class="product-card__content">
-
-                    <p class="product-card__category">
-                        Fresh Fruits
-                    </p>
-
-                    <h3 class="product-card__title">
-
-                        <a href="pages/product.html?id=product-004">
-                            Fresh Red Apple — 1 kg
-                        </a>
-
-                    </h3>
-
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.9 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
-
-                        <span class="product-card__review-count">
-                            (143)
-                        </span>
-                    </div>
-
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳315
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳350
-                        </del>
-
-                    </div>
-
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
-
-                    <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-004"
-                        data-product-name="Fresh Red Apple — 1 kg"
-                        data-product-price="315"
-                        data-product-image="assets/images/products/apple.jpg"
-                    >
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-            <!-- Product 5 -->
-
-            <article
-                class="product-card"
-                data-product-id="product-005"
-            >
-                <div class="product-card__media">
-
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-005"
-                        aria-label="View full cream milk powder"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/milk-powder.jpg"
-                            alt="Full cream milk powder 500 gram pack"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
-
-                    <span class="product-card__badge">
-                        Popular
-                    </span>
-
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Full Cream Milk Powder to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
-
-                </div>
-
-                <div class="product-card__content">
-
-                    <p class="product-card__category">
-                        Dairy Products
-                    </p>
-
-                    <h3 class="product-card__title">
-
-                        <a href="pages/product.html?id=product-005">
-                            Full Cream Milk Powder — 500 g
-                        </a>
-
-                    </h3>
-
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.7 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
-
-                        <span class="product-card__review-count">
-                            (87)
-                        </span>
-                    </div>
-
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳430
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳455
-                        </del>
-
-                    </div>
-
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
-
-                    <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-005"
-                        data-product-name="Full Cream Milk Powder — 500 g"
-                        data-product-price="430"
-                        data-product-image="assets/images/products/milk-powder.jpg"
-                    >
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-            <!-- Product 6 -->
-
-            <article
-                class="product-card"
-                data-product-id="product-006"
-            >
-                <div class="product-card__media">
-
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-006"
-                        aria-label="View orange juice"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/orange-juice.jpg"
-                            alt="Orange fruit juice one litre package"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
-
-                    <span class="product-card__badge">
-                        12% Off
-                    </span>
-
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Orange Fruit Juice to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
-
-                </div>
-
-                <div class="product-card__content">
-
-                    <p class="product-card__category">
-                        Beverages
-                    </p>
-
-                    <h3 class="product-card__title">
-
-                        <a href="pages/product.html?id=product-006">
-                            Orange Fruit Juice — 1 L
-                        </a>
-
-                    </h3>
-
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.5 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
-
-                        <span class="product-card__review-count">
-                            (62)
-                        </span>
-                    </div>
-
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳220
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳250
-                        </del>
-
-                    </div>
-
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
-
-                    <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-006"
-                        data-product-name="Orange Fruit Juice — 1 L"
-                        data-product-price="220"
-                        data-product-image="assets/images/products/orange-juice.jpg"
-                    >
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-            <!-- Product 7 -->
-
-            <article
-                class="product-card"
-                data-product-id="product-007"
-            >
-                <div class="product-card__media">
-
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-007"
-                        aria-label="View spicy potato chips"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/potato-chips.jpg"
-                            alt="Spicy potato chips packet"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
-
-                    <span class="product-card__badge">
-                        New
-                    </span>
-
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Spicy Potato Chips to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
-
-                </div>
-
-                <div class="product-card__content">
-
-                    <p class="product-card__category">
-                        Snacks
-                    </p>
-
-                    <h3 class="product-card__title">
-
-                        <a href="pages/product.html?id=product-007">
-                            Spicy Potato Chips — 75 g
-                        </a>
-
-                    </h3>
-
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.4 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
-
-                        <span class="product-card__review-count">
-                            (51)
-                        </span>
-                    </div>
-
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
-                            ৳45
-                        </span>
-
-                        <del class="product-card__old-price">
-                            ৳50
-                        </del>
-
-                    </div>
-
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
-
-                    <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-007"
-                        data-product-name="Spicy Potato Chips — 75 g"
-                        data-product-price="45"
-                        data-product-image="assets/images/products/potato-chips.jpg"
-                    >
-                        Add to Cart
-                    </button>
-
-                </div>
-
-            </article>
-
-            <!-- Product 8 -->
-
-            <article
-                class="product-card"
-                data-product-id="product-008"
-            >
-                <div class="product-card__media">
-
-                    <a
-                        class="product-card__image-link"
-                        href="pages/product.html?id=product-008"
-                        aria-label="View herbal shampoo"
-                    >
-                        <img
-                            class="product-card__image"
-                            src="assets/images/products/herbal-shampoo.jpg"
-                            alt="Herbal shampoo 400 millilitre bottle"
-                            width="420"
-                            height="420"
-                            loading="lazy"
-                        >
-                    </a>
-
-                    <span class="product-card__badge">
-                        15% Off
-                    </span>
-
-                    <button
-                        class="product-card__wishlist-button"
-                        type="button"
-                        aria-label="Add Herbal Shampoo to wishlist"
-                        aria-pressed="false"
-                        data-wishlist-button
-                    >
-                        <span aria-hidden="true">&#9825;</span>
-                    </button>
-
-                </div>
-
-                <div class="product-card__content">
-
-                    <p class="product-card__category">
-                        Personal Care
-                    </p>
-
-                    <h3 class="product-card__title">
-
-                        <a href="pages/product.html?id=product-008">
-                            Herbal Shampoo — 400 ml
-                        </a>
-
-                    </h3>
-
-                    <div
-                        class="product-card__rating"
-                        aria-label="Rated 4.6 out of 5"
-                    >
-                        <span aria-hidden="true">★★★★★</span>
-
-                        <span class="product-card__review-count">
-                            (69)
-                        </span>
-                    </div>
-
-                    <div class="product-card__pricing">
-
-                        <span class="product-card__current-price">
                             ৳340
-                        </span>
 
-                        <del class="product-card__old-price">
-                            ৳400
-                        </del>
+                        </span>
 
                     </div>
 
-                    <p class="product-card__stock product-card__stock--available">
-                        In Stock
-                    </p>
+                    <button
+                        class="product-card__button"
+                        type="button">
+
+                        Add to Cart
+
+                    </button>
+
+                </div>
+
+            </article>
+
+            <!-- PRODUCT 4 -->
+
+            <article class="product-card">
+
+                <span class="product-card__badge">
+
+                    Best Seller
+
+                </span>
+
+                <button
+                    class="product-card__wishlist"
+                    type="button"
+                    aria-label="Add Fresh Chicken to wishlist">
+
+                    ❤
+
+                </button>
+
+                <a
+                    href="product-details.html?id=4"
+                    class="product-card__image">
+
+                    <img
+                        src="assets/images/products/chicken.jpg"
+                        alt="Fresh Chicken"
+                        loading="lazy"
+                        decoding="async"
+                        width="500"
+                        height="500">
+
+                </a>
+
+                <div class="product-card__content">
+
+                    <h3 class="product-card__title">
+
+                        <a href="product-details.html?id=4">
+
+                            Fresh Broiler Chicken 1kg
+
+                        </a>
+
+                    </h3>
+
+                    <div class="product-card__rating">
+
+                        ★★★★☆
+
+                        <span>(4.6)</span>
+
+                    </div>
+
+                    <div class="product-card__price">
+
+                        <span class="product-card__price-current">
+
+                            ৳295
+
+                        </span>
+
+                    </div>
 
                     <button
-                        class="product-card__cart-button"
-                        type="button"
-                        data-add-to-cart
-                        data-product-id="product-008"
-                        data-product-name="Herbal Shampoo — 400 ml"
-                        data-product-price="340"
-                        data-product-image="assets/images/products/herbal-shampoo.jpg"
-                    >
+                        class="product-card__button"
+                        type="button">
+
                         Add to Cart
+
                     </button>
 
                 </div>
@@ -2174,6 +1730,7 @@ Lesson 2 Part 2 Starts Here
         </div>
 
     </div>
+
 </section>
 
 <!-- ==========================================
