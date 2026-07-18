@@ -2753,238 +2753,802 @@ Lesson 2 Part 2 Starts Here
      POPULAR BRANDS
 ========================================== -->
 
+<!-- ==========================================================
+     MODULE 1 — LESSON 9
+     PART 9C-1
+     PROFESSIONAL BRANDS SECTION
+========================================================== -->
+
 <section
-    class="section brands"
+    class="brands"
     aria-labelledby="brands-title"
->
+    data-brands-section>
 
     <div class="container">
 
-        <header class="section-header">
+        <!-- ==========================================
+             SECTION HEADER
+        =========================================== -->
 
-            <div class="section-header__content">
+        <header class="brands__header">
 
-                <p class="section-header__eyebrow">
-
-                    Trusted by Millions
-
-                </p>
+            <div class="brands__heading">
 
                 <h2
                     id="brands-title"
-                    class="section-header__title"
-                >
+                    class="brands__title">
 
                     Popular Brands
 
                 </h2>
 
-                <p class="section-header__description">
+                <p class="brands__subtitle">
 
-                    Shop products from the most trusted national
-                    and international brands.
+                    Shop confidently from trusted national and international brands.
 
                 </p>
 
             </div>
 
+            <a
+                href="brands.html"
+                class="brands__view-all"
+                aria-label="View all brands">
+
+                View All
+
+                <span aria-hidden="true">
+
+                    →
+
+                </span>
+
+            </a>
+
         </header>
 
-        <div class="brand-grid">
+        <!-- ==========================================
+             SLIDER
+        =========================================== -->
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+        <div
+            class="brands__slider"
+            data-brand-slider>
 
-                <img
-                    src="assets/images/brands/pran.png"
-                    alt="PRAN"
-                    loading="lazy"
-                >
+            <!-- Navigation -->
 
-            </a>
+            <button
+                class="brands__nav brands__nav--prev"
+                type="button"
+                aria-label="Previous brands"
+                data-brand-prev>
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+                ❮
 
-                <img
-                    src="assets/images/brands/rfl.png"
-                    alt="RFL"
-                    loading="lazy"
-                >
+            </button>
 
-            </a>
+            <button
+                class="brands__nav brands__nav--next"
+                type="button"
+                aria-label="Next brands"
+                data-brand-next>
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+                ❯
 
-                <img
-                    src="assets/images/brands/aci.png"
-                    alt="ACI"
-                    loading="lazy"
-                >
+            </button>
 
-            </a>
+            <!-- Track -->
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+            <div
+                class="brands__track"
+                data-brand-track>
 
-                <img
-                    src="assets/images/brands/fresh.png"
-                    alt="Fresh"
-                    loading="lazy"
-                >
+                <!-- ======================================
+                     BRAND 1
+                ======================================= -->
 
-            </a>
+                <a
+                    href="brand.html?id=fresh"
+                    class="brand-card"
+                    data-brand="Fresh">
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+                    <div class="brand-card__logo">
 
-                <img
-                    src="assets/images/brands/olympic.png"
-                    alt="Olympic"
-                    loading="lazy"
-                >
+                        <img
+                            src="assets/images/brands/fresh.png"
+                            alt="Fresh Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
 
-            </a>
+                    </div>
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+                    <h3 class="brand-card__title">
 
-                <img
-                    src="assets/images/brands/unilever.png"
-                    alt="Unilever"
-                    loading="lazy"
-                >
+                        Fresh
 
-            </a>
+                    </h3>
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+                    <p class="brand-card__count">
 
-                <img
-                    src="assets/images/brands/nestle.png"
-                    alt="Nestlé"
-                    loading="lazy"
-                >
+                        126 Products
 
-            </a>
+                    </p>
 
-            <a
-                href="#"
-                class="brand-card"
-            >
+                    <span class="brand-card__badge">
 
-                <img
-                    src="assets/images/brands/danone.png"
-                    alt="Danone"
-                    loading="lazy"
-                >
+                        ✓ Verified Brand
 
-            </a>
+                    </span>
+
+                </a>
+
+                <!-- ======================================
+                     BRAND 2
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=pran"
+                    class="brand-card"
+                    data-brand="PRAN">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/pran.png"
+                            alt="PRAN Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        PRAN
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        310 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+                <!-- ======================================
+                     BRAND 3
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=rfl"
+                    class="brand-card"
+                    data-brand="RFL">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/rfl.png"
+                            alt="RFL Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        RFL
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        218 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+                <!-- ======================================
+                     BRAND 4
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=aci"
+                    class="brand-card"
+                    data-brand="ACI">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/aci.png"
+                            alt="ACI Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        ACI
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        184 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+                                <!-- ======================================
+                     BRAND 5
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=olympic"
+                    class="brand-card"
+                    data-brand="Olympic">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/olympic.png"
+                            alt="Olympic Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        Olympic
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        247 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+                <!-- ======================================
+                     BRAND 6
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=square"
+                    class="brand-card"
+                    data-brand="Square">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/square.png"
+                            alt="Square Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        Square
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        196 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+                <!-- ======================================
+                     BRAND 7
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=teer"
+                    class="brand-card"
+                    data-brand="Teer">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/teer.png"
+                            alt="Teer Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        Teer
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        142 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+                <!-- ======================================
+                     BRAND 8
+                ======================================= -->
+
+                <a
+                    href="brand.html?id=bashundhara"
+                    class="brand-card"
+                    data-brand="Bashundhara">
+
+                    <div class="brand-card__logo">
+
+                        <img
+                            src="assets/images/brands/bashundhara.png"
+                            alt="Bashundhara Brand Logo"
+                            loading="lazy"
+                            decoding="async"
+                            width="120"
+                            height="120">
+
+                    </div>
+
+                    <h3 class="brand-card__title">
+
+                        Bashundhara
+
+                    </h3>
+
+                    <p class="brand-card__count">
+
+                        205 Products
+
+                    </p>
+
+                    <span class="brand-card__badge">
+
+                        ✓ Verified Brand
+
+                    </span>
+
+                </a>
+
+            </div>
+            <!-- /.brands__track -->
 
         </div>
+        <!-- /.brands__slider -->
+
+        <!-- ==========================================
+             SECTION FOOTER
+        =========================================== -->
+
+        <footer class="brands__footer">
+
+            <a
+                href="brands.html"
+                class="brands__explore-button">
+
+                Explore All Brands
+
+                <span aria-hidden="true">
+
+                    →
+
+                </span>
+
+            </a>
+
+        </footer>
 
     </div>
+    <!-- /.container -->
 
 </section>
 
-<!-- ==========================================
-     NEWSLETTER
-========================================== -->
+<!-- ==========================================================
+     END OF MODULE 1
+     LESSON 9
+     PART 9C
+========================================================== -->
+
+
+<!-- ==========================================================
+     MODULE 1
+     LESSON 10
+     PART 10D-1
+     PROFESSIONAL NEWSLETTER
+========================================================== -->
 
 <section
     class="newsletter"
-    aria-labelledby="newsletter-title"
->
-    <div class="container newsletter__container">
+    aria-labelledby="newsletter-title">
 
-        <div class="newsletter__content">
+    <div class="container">
 
-            <p class="newsletter__eyebrow">
-                Stay Connected
-            </p>
+        <div class="newsletter__wrapper">
 
-            <h2
-                class="newsletter__title"
-                id="newsletter-title"
-            >
-                Get Exclusive Offers in Your Inbox
-            </h2>
+            <div class="newsletter__grid">
 
-            <p class="newsletter__description">
-                Subscribe to receive product updates, special discounts,
-                flash-sale alerts and helpful shopping information.
-            </p>
+                <!-- ==========================================
+                     CONTENT
+                =========================================== -->
 
-        </div>
+                <div class="newsletter__content">
 
-        <form
-            class="newsletter__form"
-            action="#"
-            method="post"
-            data-newsletter-form
-        >
-            <div class="newsletter__field">
+                    <span class="newsletter__badge">
 
-                <label
-                    class="visually-hidden"
-                    for="newsletter-email"
-                >
-                    Email address
-                </label>
+                        ✨ Weekly Exclusive Offers
 
-                <input
-                    class="newsletter__input"
-                    id="newsletter-email"
-                    name="email"
-                    type="email"
-                    placeholder="Enter your email address"
-                    autocomplete="email"
-                    inputmode="email"
-                    maxlength="254"
-                    required
-                >
+                    </span>
 
-                <button
-                    class="newsletter__button"
-                    type="submit"
-                >
-                    Subscribe
-                </button>
+                    <h2
+                        id="newsletter-title"
+                        class="newsletter__title">
+
+                        Subscribe To Our Newsletter
+
+                    </h2>
+
+                    <p
+                        class="newsletter__description">
+
+                        Join thousands of happy customers
+                        and receive exclusive discounts,
+                        flash sale alerts,
+                        new product updates,
+                        and special offers directly
+                        in your inbox.
+
+                    </p>
+
+                </div>
+
+                <!-- ==========================================
+                     FORM
+                =========================================== -->
+
+                <div
+                    class="newsletter__form-wrapper">
+
+                    <form
+                        class="newsletter__form"
+                        id="newsletterForm"
+                        novalidate>
+
+                        <div
+                            class="newsletter__input-group">
+
+                            <span
+                                class="newsletter__input-icon"
+                                aria-hidden="true">
+
+                                ✉️
+
+                            </span>
+
+                            <input
+
+                                class="newsletter__input"
+
+                                type="email"
+
+                                id="newsletterEmail"
+
+                                name="email"
+
+                                placeholder="Enter your email address"
+
+                                autocomplete="email"
+
+                                required
+
+                                aria-label="Email address">
+
+                            <button
+
+                                class="newsletter__submit"
+
+                                type="submit">
+
+                                Subscribe
+
+                            </button>
+
+                        </div>
+
+                        <!-- Success Message -->
+
+                        <div
+
+                            class="newsletter__message newsletter__message--success"
+
+                            id="newsletterSuccess"
+
+                            role="status"
+
+                            aria-live="polite">
+
+                            ✅ Thank you for subscribing!
+
+                        </div>
+
+                        <!-- Error Message -->
+
+                        <div
+
+                            class="newsletter__message newsletter__message--error"
+
+                            id="newsletterError"
+
+                            role="alert"
+
+                            aria-live="assertive">
+
+                            ❌ Please enter a valid email address.
+
+                        </div>
+
+                        <p
+                            class="newsletter__note">
+
+                            We respect your privacy.
+                            No spam.
+                            Unsubscribe anytime.
+
+                        </p>
+
+                    </form>
+
+                </div>
 
             </div>
 
-            <p
-                class="newsletter__message"
-                aria-live="polite"
-                data-newsletter-message
-            ></p>
-
-            <p class="newsletter__privacy">
-                By subscribing, you agree to receive promotional emails.
-                You can unsubscribe at any time.
-            </p>
-
-        </form>
+        </div>
 
     </div>
+
 </section>
 
-</main>
+<!-- ==========================================================
+     TRUST FEATURES STARTS BELOW
+========================================================== -->
+
+<!-- ==========================================================
+     MODULE 1
+     LESSON 10
+     PART 10D-2
+     TRUST FEATURES
+========================================================== -->
+
+<section
+    class="trust-features"
+    aria-labelledby="trust-features-title">
+
+    <h2
+        id="trust-features-title"
+        class="visually-hidden">
+
+        Why Shop With Us
+
+    </h2>
+
+    <div class="trust-features__grid">
+
+        <!-- ==========================================
+             FEATURE 1
+        =========================================== -->
+
+        <article
+            class="trust-feature">
+
+            <div
+                class="trust-feature__icon"
+                aria-hidden="true">
+
+                🚚
+
+            </div>
+
+            <div
+                class="trust-feature__content">
+
+                <h3
+                    class="trust-feature__title">
+
+                    Free Delivery
+
+                </h3>
+
+                <p
+                    class="trust-feature__description">
+
+                    Enjoy fast and reliable delivery on
+                    eligible orders with no hidden charges.
+
+                </p>
+
+            </div>
+
+        </article>
+
+        <!-- ==========================================
+             FEATURE 2
+        =========================================== -->
+
+        <article
+            class="trust-feature">
+
+            <div
+                class="trust-feature__icon"
+                aria-hidden="true">
+
+                🔒
+
+            </div>
+
+            <div
+                class="trust-feature__content">
+
+                <h3
+                    class="trust-feature__title">
+
+                    Secure Payment
+
+                </h3>
+
+                <p
+                    class="trust-feature__description">
+
+                    Your payments are protected using
+                    trusted and secure payment methods.
+
+                </p>
+
+            </div>
+
+        </article>
+
+        <!-- ==========================================
+             FEATURE 3
+        =========================================== -->
+
+        <article
+            class="trust-feature">
+
+            <div
+                class="trust-feature__icon"
+                aria-hidden="true">
+
+                🔄
+
+            </div>
+
+            <div
+                class="trust-feature__content">
+
+                <h3
+                    class="trust-feature__title">
+
+                    Easy Returns
+
+                </h3>
+
+                <p
+                    class="trust-feature__description">
+
+                    Hassle-free return policy for eligible
+                    products within the return period.
+
+                </p>
+
+            </div>
+
+        </article>
+
+        <!-- ==========================================
+             FEATURE 4
+        =========================================== -->
+
+        <article
+            class="trust-feature">
+
+            <div
+                class="trust-feature__icon"
+                aria-hidden="true">
+
+                🎧
+
+            </div>
+
+            <div
+                class="trust-feature__content">
+
+                <h3
+                    class="trust-feature__title">
+
+                    24/7 Customer Support
+
+                </h3>
+
+                <p
+                    class="trust-feature__description">
+
+                    Our support team is always ready to
+                    help you anytime through multiple
+                    communication channels.
+
+                </p>
+
+            </div>
+
+        </article>
+
+    </div>
+
+</section>
+
+<!-- ==========================================================
+     END TRUST FEATURES
+========================================================== -->
 
 <!-- ==========================================
      FOOTER

@@ -8654,7 +8654,7 @@ gap:18px;
 
     -webkit-box-orient:vertical;
 
-    -webkit-line-clamp:2;
+    
 
 }
 
@@ -9646,3 +9646,2317 @@ scroll-behavior:auto !important;
 /* =========================================================
    MODULE 1 — LESSON 8 COMPLETED
 ========================================================= */
+
+/* =========================================================
+   MODULE 1 — LESSON 9
+   PART 9A
+   POPULAR BRANDS LAYOUT
+========================================================= */
+
+/* ==========================================
+   BRANDS SECTION
+========================================== */
+
+.brands{
+
+    margin:80px 0;
+
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+.brands__header{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:24px;
+
+    margin-bottom:32px;
+
+    flex-wrap:wrap;
+
+}
+
+.brands__heading{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:8px;
+
+}
+
+.brands__title{
+
+    margin:0;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    color:#222;
+
+}
+
+.brands__subtitle{
+
+    margin:0;
+
+    color:#666;
+
+    font-size:1rem;
+
+    line-height:1.6;
+
+}
+
+/* ==========================================
+   VIEW ALL
+========================================== */
+
+.brands__view-all{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:12px 22px;
+
+    border-radius:999px;
+
+    background:#f85606;
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:
+        background .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+
+}
+
+.brands__view-all:hover{
+
+    background:#dd4b00;
+
+    transform:translateY(-2px);
+
+    box-shadow:
+        0 10px 24px rgba(248,86,6,.25);
+
+}
+
+/* ==========================================
+   SLIDER
+========================================== */
+
+.brands__slider{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.brands__track{
+
+    display:grid;
+
+    grid-auto-flow:column;
+
+    grid-auto-columns:calc(25% - 18px);
+
+    gap:24px;
+
+    overflow-x:auto;
+
+    scroll-behavior:smooth;
+
+    scrollbar-width:none;
+
+    padding-bottom:6px;
+
+}
+
+.brands__track::-webkit-scrollbar{
+
+    display:none;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1200px){
+
+.brands__track{
+
+grid-auto-columns:calc(33.333% - 16px);
+
+}
+
+}
+
+@media (max-width:768px){
+
+.brands{
+
+margin:60px 0;
+
+}
+
+.brands__header{
+
+flex-direction:column;
+
+align-items:flex-start;
+
+}
+
+.brands__track{
+
+grid-auto-columns:calc(50% - 12px);
+
+gap:18px;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.brands__track{
+
+grid-auto-columns:100%;
+
+gap:16px;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1
+   LESSON 9
+   PART 9B STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1 — LESSON 9
+   PART 9B
+   PROFESSIONAL BRAND CARD
+========================================================= */
+
+/* ==========================================
+   BRAND CARD
+========================================== */
+
+.brand-card{
+
+    position:relative;
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    justify-content:center;
+
+    min-height:220px;
+
+    padding:30px 24px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:20px;
+
+    text-align:center;
+
+    text-decoration:none;
+
+    overflow:hidden;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+
+    box-shadow:
+        0 10px 28px rgba(0,0,0,.06);
+
+}
+
+/* ==========================================
+   TOP ACCENT
+========================================== */
+
+.brand-card::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:0;
+
+    left:0;
+
+    width:100%;
+
+    height:4px;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f85606,
+            #ff9800,
+            #ffd54f
+        );
+
+}
+
+/* ==========================================
+   LOGO
+========================================== */
+
+.brand-card__logo{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:90px;
+
+    height:90px;
+
+    margin-bottom:20px;
+
+    border-radius:50%;
+
+    background:#f8f8f8;
+
+    overflow:hidden;
+
+    transition:
+        transform .35s ease,
+        background .35s ease;
+
+}
+
+.brand-card__logo img{
+
+    width:70%;
+
+    height:70%;
+
+    object-fit:contain;
+
+}
+
+/* ==========================================
+   BRAND NAME
+========================================== */
+
+.brand-card__title{
+
+    margin:0;
+
+    color:#222;
+
+    font-size:1.1rem;
+
+    font-weight:800;
+
+    line-height:1.4;
+
+}
+
+/* ==========================================
+   PRODUCT COUNT
+========================================== */
+
+.brand-card__count{
+
+    margin-top:10px;
+
+    color:#666;
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+}
+
+/* ==========================================
+   VERIFIED BADGE
+========================================== */
+
+.brand-card__badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:6px;
+
+    margin-top:16px;
+
+    padding:8px 14px;
+
+    border-radius:999px;
+
+    background:#eef9f1;
+
+    color:#16a34a;
+
+    font-size:.8rem;
+
+    font-weight:700;
+
+}
+
+/* ==========================================
+   HOVER EFFECT
+========================================== */
+
+.brand-card:hover{
+
+    transform:translateY(-10px);
+
+    border-color:rgba(248,86,6,.25);
+
+    box-shadow:
+        0 20px 45px rgba(0,0,0,.12),
+        0 8px 20px rgba(248,86,6,.12);
+
+}
+
+.brand-card:hover
+.brand-card__logo{
+
+    transform:scale(1.08);
+
+    background:#fff2ea;
+
+}
+
+/* ==========================================
+   ACTIVE
+========================================== */
+
+.brand-card:active{
+
+    transform:translateY(-3px);
+
+}
+
+/* ==========================================
+   KEYBOARD
+========================================== */
+
+.brand-card:focus-visible{
+
+    outline:3px solid rgba(248,86,6,.28);
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:768px){
+
+.brand-card{
+
+min-height:200px;
+
+padding:24px 18px;
+
+}
+
+.brand-card__logo{
+
+width:80px;
+
+height:80px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.brand-card{
+
+min-height:180px;
+
+padding:20px 16px;
+
+}
+
+.brand-card__logo{
+
+width:70px;
+
+height:70px;
+
+margin-bottom:16px;
+
+}
+
+.brand-card__title{
+
+font-size:1rem;
+
+}
+
+.brand-card__count{
+
+font-size:.85rem;
+
+}
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+@media (prefers-color-scheme:dark){
+
+.brand-card{
+
+background:#1f1f1f;
+
+border-color:#3d3d3d;
+
+box-shadow:
+0 12px 28px rgba(0,0,0,.35);
+
+}
+
+.brand-card__logo{
+
+background:#2b2b2b;
+
+}
+
+.brand-card__title{
+
+color:#f5f5f5;
+
+}
+
+.brand-card__count{
+
+color:#bdbdbd;
+
+}
+
+.brand-card__badge{
+
+background:#1d3b27;
+
+color:#7ef2a4;
+
+}
+
+}
+
+/* ==========================================
+   HIGH CONTRAST
+========================================== */
+
+@media (prefers-contrast:more){
+
+.brand-card{
+
+border:2px solid #000;
+
+}
+
+.brand-card__title{
+
+font-weight:900;
+
+}
+
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.brand-card,
+.brand-card *,
+.brand-card::before{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1 — LESSON 9
+   PART 9C STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1 — LESSON 9
+   PART 9E
+   FINAL POLISH
+========================================================= */
+
+/* ==========================================
+   SLIDER NAVIGATION
+========================================== */
+
+.brands__slider{
+
+    position:relative;
+
+}
+
+.brands__nav{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    z-index:20;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:48px;
+
+    height:48px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:#ffffff;
+
+    color:#222222;
+
+    cursor:pointer;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,.12);
+
+    transition:
+        background .30s ease,
+        color .30s ease,
+        transform .30s ease,
+        box-shadow .30s ease;
+
+}
+
+.brands__nav:hover{
+
+    background:#f85606;
+
+    color:#ffffff;
+
+    transform:translateY(-50%) scale(1.08);
+
+}
+
+.brands__nav:active{
+
+    transform:translateY(-50%) scale(.95);
+
+}
+
+.brands__nav--prev{
+
+    left:-20px;
+
+}
+
+.brands__nav--next{
+
+    right:-20px;
+
+}
+
+
+/* ==========================================
+   FOOTER
+========================================== */
+
+.brands__footer{
+
+    display:flex;
+
+    justify-content:center;
+
+    margin-top:40px;
+
+}
+
+.brands__explore-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    padding:14px 28px;
+
+    border-radius:999px;
+
+    background:#f85606;
+
+    color:#ffffff;
+
+    font-weight:700;
+
+    text-decoration:none;
+
+    transition:
+        background .30s ease,
+        transform .30s ease,
+        box-shadow .30s ease;
+
+}
+
+.brands__explore-button:hover{
+
+    background:#dd4b00;
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 12px 24px rgba(248,86,6,.25);
+
+}
+
+
+/* ==========================================
+   SCROLL SNAP
+========================================== */
+
+.brands__track{
+
+    scroll-snap-type:x mandatory;
+
+    cursor:grab;
+
+}
+
+.brands__track.is-dragging{
+
+    cursor:grabbing;
+
+}
+
+.brand-card{
+
+    scroll-snap-align:start;
+
+}
+
+
+/* ==========================================
+   KEYBOARD
+========================================== */
+
+.brands__nav:focus-visible,
+.brands__view-all:focus-visible,
+.brands__explore-button:focus-visible,
+.brand-card:focus-visible{
+
+    outline:3px solid rgba(248,86,6,.30);
+
+    outline-offset:4px;
+
+}
+
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+@media (prefers-color-scheme:dark){
+
+.brands__title{
+
+color:#f5f5f5;
+
+}
+
+.brands__subtitle{
+
+color:#bdbdbd;
+
+}
+
+.brands__nav{
+
+background:#2d2d2d;
+
+color:#ffffff;
+
+box-shadow:
+0 10px 28px rgba(0,0,0,.45);
+
+}
+
+.brands__nav:hover{
+
+background:#f85606;
+
+}
+
+.brands__explore-button{
+
+box-shadow:
+0 10px 25px rgba(0,0,0,.30);
+
+}
+
+}
+
+
+/* ==========================================
+   HIGH CONTRAST
+========================================== */
+
+@media (prefers-contrast:more){
+
+.brands__nav{
+
+border:2px solid #000000;
+
+}
+
+.brand-card{
+
+border:2px solid #000000;
+
+}
+
+}
+
+
+/* ==========================================
+   LARGE SCREEN
+========================================== */
+
+@media (min-width:1400px){
+
+.brands__track{
+
+gap:30px;
+
+}
+
+}
+
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+.brands__nav{
+
+display:none;
+
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.brands{
+
+margin:60px 0;
+
+}
+
+.brands__footer{
+
+margin-top:28px;
+
+}
+
+.brands__explore-button{
+
+width:100%;
+
+justify-content:center;
+
+}
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.brand-card{
+
+min-height:170px;
+
+}
+
+.brands__track{
+
+gap:14px;
+
+}
+
+}
+
+
+/* ==========================================
+   TOUCH DEVICES
+========================================== */
+
+@media (hover:none){
+
+.brands__track{
+
+scroll-behavior:smooth;
+
+}
+
+.brand-card:hover{
+
+transform:none;
+
+}
+
+.brands__explore-button:hover{
+
+transform:none;
+
+}
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.brands,
+.brands *,
+.brands::before,
+.brands::after{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1
+   LESSON 9 COMPLETED
+========================================================= */
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10A
+   NEWSLETTER LAYOUT
+========================================================= */
+
+/* ==========================================
+   NEWSLETTER
+========================================== */
+
+.newsletter{
+
+    position:relative;
+
+    margin:90px 0;
+
+}
+
+/* ==========================================
+   CONTAINER
+========================================== */
+
+.newsletter__wrapper{
+
+    position:relative;
+
+    overflow:hidden;
+
+    padding:70px 60px;
+
+    border-radius:28px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f85606,
+            #ff8c3a,
+            #ffb347
+        );
+
+    color:#ffffff;
+
+    box-shadow:
+        0 24px 60px rgba(248,86,6,.20);
+
+}
+
+/* ==========================================
+   DECORATION
+========================================== */
+
+.newsletter__wrapper::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-120px;
+
+    right:-120px;
+
+    width:260px;
+
+    height:260px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.10);
+
+}
+
+.newsletter__wrapper::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-90px;
+
+    left:-90px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:
+        rgba(255,255,255,.08);
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.newsletter__grid{
+
+    position:relative;
+
+    z-index:2;
+
+    display:grid;
+
+    grid-template-columns:
+        1.2fr
+        1fr;
+
+    gap:40px;
+
+    align-items:center;
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.newsletter__content{
+
+    max-width:620px;
+
+}
+
+.newsletter__badge{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    gap:8px;
+
+    padding:8px 16px;
+
+    border-radius:999px;
+
+    background:
+        rgba(255,255,255,.16);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    font-size:.82rem;
+
+    font-weight:700;
+
+}
+
+.newsletter__title{
+
+    margin:22px 0 18px;
+
+    font-size:2.4rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+}
+
+.newsletter__description{
+
+    margin:0;
+
+    font-size:1.05rem;
+
+    line-height:1.8;
+
+    color:
+        rgba(255,255,255,.92);
+
+}
+
+/* ==========================================
+   FORM WRAPPER
+========================================== */
+
+.newsletter__form-wrapper{
+
+    width:100%;
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:1100px){
+
+.newsletter__grid{
+
+grid-template-columns:1fr;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.newsletter{
+
+margin:70px 0;
+
+}
+
+.newsletter__wrapper{
+
+padding:40px 30px;
+
+}
+
+.newsletter__title{
+
+font-size:2rem;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.newsletter__wrapper{
+
+padding:28px 22px;
+
+border-radius:22px;
+
+}
+
+.newsletter__title{
+
+font-size:1.6rem;
+
+}
+
+.newsletter__description{
+
+font-size:.95rem;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10B STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10B
+   PROFESSIONAL NEWSLETTER FORM
+========================================================= */
+
+/* ==========================================
+   FORM
+========================================== */
+
+.newsletter__form{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:18px;
+
+}
+
+/* ==========================================
+   INPUT GROUP
+========================================== */
+
+.newsletter__input-group{
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    min-height:64px;
+
+    background:#ffffff;
+
+    border:2px solid transparent;
+
+    border-radius:18px;
+
+    transition:
+        border-color .30s ease,
+        box-shadow .30s ease,
+        transform .30s ease;
+
+}
+
+.newsletter__input-group:focus-within{
+
+    border-color:#ffffff;
+
+    box-shadow:
+        0 0 0 6px rgba(255,255,255,.20);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.newsletter__input-icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    width:64px;
+
+    color:#f85606;
+
+    font-size:1.2rem;
+
+    flex-shrink:0;
+
+}
+
+/* ==========================================
+   INPUT
+========================================== */
+
+.newsletter__input{
+
+    flex:1;
+
+    min-width:0;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    color:#222222;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    padding:0 18px 0 0;
+
+}
+
+.newsletter__input::placeholder{
+
+    color:#9ca3af;
+
+}
+
+/* ==========================================
+   SUBMIT BUTTON
+========================================== */
+
+.newsletter__submit{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-width:180px;
+
+    height:64px;
+
+    padding:0 28px;
+
+    border:none;
+
+    background:#f85606;
+
+    color:#ffffff;
+
+    font-size:1rem;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:
+        background .30s ease,
+        transform .30s ease;
+
+}
+
+.newsletter__submit:hover{
+
+    background:#dd4b00;
+
+}
+
+.newsletter__submit:active{
+
+    transform:scale(.98);
+
+}
+
+/* ==========================================
+   NOTE
+========================================== */
+
+.newsletter__note{
+
+    margin:0;
+
+    color:rgba(255,255,255,.90);
+
+    font-size:.88rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   MESSAGE
+========================================== */
+
+.newsletter__message{
+
+    display:none;
+
+    padding:14px 18px;
+
+    border-radius:14px;
+
+    font-size:.92rem;
+
+    font-weight:600;
+
+}
+
+.newsletter__message--success{
+
+    background:#dcfce7;
+
+    color:#166534;
+
+}
+
+.newsletter__message--error{
+
+    background:#fee2e2;
+
+    color:#991b1b;
+
+}
+
+/* ==========================================
+   LOADING BUTTON
+========================================== */
+
+.newsletter__submit.is-loading{
+
+    pointer-events:none;
+
+    opacity:.8;
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:768px){
+
+.newsletter__input-group{
+
+flex-direction:column;
+
+align-items:stretch;
+
+min-height:auto;
+
+}
+
+.newsletter__input-icon{
+
+display:none;
+
+}
+
+.newsletter__input{
+
+padding:18px;
+
+}
+
+.newsletter__submit{
+
+width:100%;
+
+border-radius:0 0 16px 16px;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.newsletter__input{
+
+font-size:.95rem;
+
+}
+
+.newsletter__submit{
+
+height:58px;
+
+font-size:.95rem;
+
+}
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+@media (prefers-color-scheme:dark){
+
+.newsletter__input-group{
+
+background:#2b2b2b;
+
+}
+
+.newsletter__input{
+
+color:#ffffff;
+
+}
+
+.newsletter__input::placeholder{
+
+color:#9ca3af;
+
+}
+
+}
+
+/* ==========================================
+   HIGH CONTRAST
+========================================== */
+
+@media (prefers-contrast:more){
+
+.newsletter__input-group{
+
+border:2px solid #000000;
+
+}
+
+.newsletter__submit{
+
+border-left:2px solid #000000;
+
+}
+
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.newsletter__form *,
+.newsletter__form::before,
+.newsletter__form::after{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10C STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10C
+   TRUST FEATURES
+========================================================= */
+
+/* ==========================================
+   TRUST SECTION
+========================================== */
+
+.trust-features{
+
+    margin-top:50px;
+
+}
+
+/* ==========================================
+   GRID
+========================================== */
+
+.trust-features__grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,minmax(0,1fr));
+
+    gap:24px;
+
+}
+
+/* ==========================================
+   CARD
+========================================== */
+
+.trust-feature{
+
+    display:flex;
+
+    align-items:flex-start;
+
+    gap:18px;
+
+    padding:24px;
+
+    background:#ffffff;
+
+    border:1px solid rgba(0,0,0,.08);
+
+    border-radius:20px;
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease,
+        border-color .30s ease;
+
+    box-shadow:
+        0 10px 24px rgba(0,0,0,.06);
+
+}
+
+/* ==========================================
+   ICON
+========================================== */
+
+.trust-feature__icon{
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    flex-shrink:0;
+
+    width:64px;
+
+    height:64px;
+
+    border-radius:18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f85606,
+            #ff9d42
+        );
+
+    color:#ffffff;
+
+    font-size:1.6rem;
+
+}
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.trust-feature__content{
+
+    flex:1;
+
+}
+
+.trust-feature__title{
+
+    margin:0 0 8px;
+
+    color:#222222;
+
+    font-size:1.08rem;
+
+    font-weight:800;
+
+}
+
+.trust-feature__description{
+
+    margin:0;
+
+    color:#666666;
+
+    font-size:.92rem;
+
+    line-height:1.7;
+
+}
+
+/* ==========================================
+   HOVER
+========================================== */
+
+.trust-feature:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(248,86,6,.20);
+
+    box-shadow:
+        0 20px 40px rgba(0,0,0,.10),
+        0 10px 20px rgba(248,86,6,.12);
+
+}
+
+.trust-feature:hover
+.trust-feature__icon{
+
+    transform:scale(1.08);
+
+}
+
+/* ==========================================
+   FOCUS
+========================================== */
+
+.trust-feature:focus-within{
+
+    outline:3px solid rgba(248,86,6,.25);
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+.trust-features__grid{
+
+grid-template-columns:repeat(2,1fr);
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:576px){
+
+.trust-features{
+
+margin-top:40px;
+
+}
+
+.trust-features__grid{
+
+grid-template-columns:1fr;
+
+gap:18px;
+
+}
+
+.trust-feature{
+
+padding:20px;
+
+}
+
+.trust-feature__icon{
+
+width:56px;
+
+height:56px;
+
+font-size:1.35rem;
+
+}
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+@media (prefers-color-scheme:dark){
+
+.trust-feature{
+
+background:#1f1f1f;
+
+border-color:#3b3b3b;
+
+}
+
+.trust-feature__title{
+
+color:#f5f5f5;
+
+}
+
+.trust-feature__description{
+
+color:#bdbdbd;
+
+}
+
+}
+
+/* ==========================================
+   HIGH CONTRAST
+========================================== */
+
+@media (prefers-contrast:more){
+
+.trust-feature{
+
+border:2px solid #000;
+
+}
+
+.trust-feature__icon{
+
+border:2px solid #ffffff;
+
+}
+
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.trust-feature,
+.trust-feature *,
+.trust-feature::before,
+.trust-feature::after{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10D STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1
+   LESSON 10
+   PART 10F
+   FINAL POLISH
+========================================================= */
+
+/* ==========================================
+   ACCESSIBILITY
+========================================== */
+
+.visually-hidden{
+
+    position:absolute !important;
+
+    width:1px;
+
+    height:1px;
+
+    padding:0;
+
+    margin:-1px;
+
+    overflow:hidden;
+
+    clip:rect(0,0,0,0);
+
+    white-space:nowrap;
+
+    border:0;
+
+}
+
+/* ==========================================
+   INVALID INPUT
+========================================== */
+
+.newsletter__input.is-invalid{
+
+    color:#dc2626;
+
+}
+
+.newsletter__input-group:has(.newsletter__input.is-invalid){
+
+    border-color:#dc2626;
+
+    box-shadow:
+        0 0 0 4px rgba(220,38,38,.15);
+
+}
+
+/* ==========================================
+   SUCCESS INPUT
+========================================== */
+
+.newsletter__input-group:focus-within{
+
+    transform:translateY(-2px);
+
+}
+
+/* ==========================================
+   BUTTON IMPROVEMENTS
+========================================== */
+
+.newsletter__submit{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.newsletter__submit::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            120deg,
+            transparent,
+            rgba(255,255,255,.28),
+            transparent
+        );
+
+    transform:translateX(-100%);
+
+    transition:transform .6s ease;
+
+}
+
+.newsletter__submit:hover::before{
+
+    transform:translateX(100%);
+
+}
+
+.newsletter__submit:disabled{
+
+    cursor:not-allowed;
+
+    opacity:.75;
+
+}
+
+/* ==========================================
+   CARD POLISH
+========================================== */
+
+.trust-feature{
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.trust-feature::before{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(248,86,6,.05),
+            transparent
+        );
+
+    opacity:0;
+
+    transition:opacity .3s ease;
+
+}
+
+.trust-feature:hover::before{
+
+    opacity:1;
+
+}
+
+.trust-feature__icon{
+
+    transition:
+        transform .30s ease,
+        box-shadow .30s ease;
+
+}
+
+.trust-feature:hover .trust-feature__icon{
+
+    transform:rotate(-6deg) scale(1.08);
+
+    box-shadow:
+        0 10px 24px rgba(248,86,6,.25);
+
+}
+
+/* ==========================================
+   FOCUS STATES
+========================================== */
+
+.newsletter__input:focus-visible,
+.newsletter__submit:focus-visible,
+.trust-feature:focus-visible{
+
+    outline:3px solid rgba(248,86,6,.35);
+
+    outline-offset:4px;
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+@media (prefers-color-scheme:dark){
+
+.newsletter__wrapper{
+
+background:
+linear-gradient(
+135deg,
+#9f3b00,
+#cf5a00,
+#ff8c3a
+);
+
+}
+
+.newsletter__input-group{
+
+border-color:#444;
+
+}
+
+.newsletter__note{
+
+color:#d1d5db;
+
+}
+
+.newsletter__message--success{
+
+background:#14532d;
+
+color:#dcfce7;
+
+}
+
+.newsletter__message--error{
+
+background:#7f1d1d;
+
+color:#fee2e2;
+
+}
+
+}
+
+/* ==========================================
+   LARGE DESKTOP
+========================================== */
+
+@media (min-width:1400px){
+
+.newsletter__wrapper{
+
+padding:80px;
+
+}
+
+.newsletter__title{
+
+font-size:2.8rem;
+
+}
+
+.trust-features__grid{
+
+gap:30px;
+
+}
+
+}
+
+/* ==========================================
+   TABLET
+========================================== */
+
+@media (max-width:992px){
+
+.newsletter__grid{
+
+gap:32px;
+
+}
+
+.newsletter__title{
+
+font-size:2rem;
+
+}
+
+}
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.newsletter{
+
+margin:60px 0;
+
+}
+
+.newsletter__wrapper{
+
+padding:32px 24px;
+
+}
+
+.newsletter__badge{
+
+font-size:.78rem;
+
+}
+
+.newsletter__description{
+
+font-size:.95rem;
+
+}
+
+.trust-feature{
+
+align-items:center;
+
+}
+
+}
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.newsletter__title{
+
+font-size:1.5rem;
+
+}
+
+.newsletter__submit{
+
+width:100%;
+
+}
+
+.trust-feature{
+
+flex-direction:column;
+
+text-align:center;
+
+}
+
+.trust-feature__content{
+
+display:flex;
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+}
+
+/* ==========================================
+   TOUCH DEVICES
+========================================== */
+
+@media (hover:none){
+
+.newsletter__submit:hover{
+
+transform:none;
+
+}
+
+.trust-feature:hover{
+
+transform:none;
+
+}
+
+}
+
+/* ==========================================
+   HIGH CONTRAST
+========================================== */
+
+@media (prefers-contrast:more){
+
+.newsletter__wrapper{
+
+border:2px solid #ffffff;
+
+}
+
+.newsletter__submit{
+
+border:2px solid #000000;
+
+}
+
+.newsletter__message{
+
+border:2px solid currentColor;
+
+}
+
+}
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.newsletter,
+.newsletter *,
+.trust-features,
+.trust-features *,
+.newsletter::before,
+.newsletter::after,
+.trust-features::before,
+.trust-features::after{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+scroll-behavior:auto !important;
+
+}
+
+}
+
+/* ==========================================
+   PERFORMANCE
+========================================== */
+
+.newsletter,
+.trust-features{
+
+content-visibility:auto;
+
+contain-intrinsic-size:700px;
+
+}
+
+.newsletter__wrapper,
+.trust-feature{
+
+contain:layout style paint;
+
+}
+
+/* =========================================================
+   MODULE 1
+   LESSON 10 COMPLETED
+========================================================= */
+
