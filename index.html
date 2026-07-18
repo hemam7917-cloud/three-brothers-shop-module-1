@@ -1733,233 +1733,1021 @@ Lesson 2 Part 2 Starts Here
 
 </section>
 
-<!-- ==========================================
-     FLASH SALE
-========================================== -->
+<!-- ==========================================================
+     MODULE 1 — LESSON 8
+     PART 8D-HTML-1
+     PROFESSIONAL FLASH SALE SECTION
+========================================================== -->
 
 <section
-    class="section flash-sale"
+    class="flash-sale"
     aria-labelledby="flash-sale-title"
->
+    data-flash-sale>
 
     <div class="container">
 
-        <header class="section-header">
+        <!-- ==========================================
+             FLASH SALE HEADER
+        =========================================== -->
 
-            <div class="section-header__content">
+        <header class="flash-sale__header">
 
-                <p class="section-header__eyebrow">
-                    Limited Time Offer
-                </p>
+            <div class="flash-sale__heading">
 
                 <h2
                     id="flash-sale-title"
-                    class="section-header__title"
-                >
+                    class="flash-sale__title">
+
+                    <span
+                        class="flash-sale__icon"
+                        aria-hidden="true">
+
+                        ⚡
+
+                    </span>
+
                     Flash Sale
+
                 </h2>
 
-                <p class="section-header__description">
+                <p class="flash-sale__subtitle">
 
-                    Grab today's hottest deals before time runs out.
+                    Limited-time deals on popular products.
+                    Order before the countdown ends.
 
                 </p>
 
             </div>
 
-            <div class="flash-sale__countdown">
+            <!-- ======================================
+                 LIVE COUNTDOWN
+            ======================================= -->
 
-                <span class="countdown-box">
+            <div
+                class="flash-sale__countdown"
+                role="timer"
+                aria-label="Flash sale countdown"
+                aria-live="off">
 
-                    <strong>08</strong>
+                <!-- DAYS -->
 
-                    <small>Hours</small>
+                <div class="flash-sale__time">
 
-                </span>
+                    <span
+                        class="flash-sale__number"
+                        data-flash-days>
 
-                <span class="countdown-box">
+                        00
 
-                    <strong>25</strong>
+                    </span>
 
-                    <small>Minutes</small>
+                    <span class="flash-sale__label">
 
-                </span>
+                        Days
 
-                <span class="countdown-box">
+                    </span>
 
-                    <strong>49</strong>
+                </div>
 
-                    <small>Seconds</small>
+                <!-- HOURS -->
 
-                </span>
+                <div class="flash-sale__time">
+
+                    <span
+                        class="flash-sale__number"
+                        data-flash-hours>
+
+                        00
+
+                    </span>
+
+                    <span class="flash-sale__label">
+
+                        Hours
+
+                    </span>
+
+                </div>
+
+                <!-- MINUTES -->
+
+                <div class="flash-sale__time">
+
+                    <span
+                        class="flash-sale__number"
+                        data-flash-minutes>
+
+                        00
+
+                    </span>
+
+                    <span class="flash-sale__label">
+
+                        Minutes
+
+                    </span>
+
+                </div>
+
+                <!-- SECONDS -->
+
+                <div class="flash-sale__time">
+
+                    <span
+                        class="flash-sale__number"
+                        data-flash-seconds>
+
+                        00
+
+                    </span>
+
+                    <span class="flash-sale__label">
+
+                        Seconds
+
+                    </span>
+
+                </div>
 
             </div>
 
         </header>
 
-        <div class="flash-sale-grid">
+        <!-- ==========================================
+             FLASH SALE PRODUCT GRID
+        =========================================== -->
 
-            <!-- Item 1 -->
+        <div class="flash-sale__grid">
 
-            <article class="flash-card">
+            <!-- ======================================
+                 FLASH SALE PRODUCT 1
+            ======================================= -->
 
-                <img
-                    src="assets/images/products/sunflower-oil.jpg"
-                    alt="Sunflower Oil"
-                    loading="lazy"
-                >
+            <article
+                class="flash-sale-card"
+                data-product-id="flash-product-1">
 
-                <h3>
+                <div class="flash-sale-card__media">
 
-                    Sunflower Oil 5L
+                    <span class="flash-sale-card__discount">
 
-                </h3>
+                        -25%
 
-                <p class="flash-card__price">
-
-                    <span class="new-price">
-                        ৳980
                     </span>
 
-                    <del>
-                        ৳1150
-                    </del>
+                    <button
+                        class="flash-sale-card__wishlist"
+                        type="button"
+                        aria-label="Add Premium Miniket Rice to wishlist"
+                        aria-pressed="false"
+                        data-wishlist-button>
 
-                </p>
+                        <span aria-hidden="true">
 
-                <button
-                    type="button"
-                    class="flash-card__button"
-                >
+                            ♡
 
-                    Add To Cart
+                        </span>
 
-                </button>
+                    </button>
+
+                    <a
+                        href="product-details.html?id=1"
+                        aria-label="View Premium Miniket Rice details">
+
+                        <img
+                            class="flash-sale-card__image"
+                            src="assets/images/products/rice.jpg"
+                            alt="Premium Miniket Rice 25 kilogram bag"
+                            loading="lazy"
+                            decoding="async"
+                            width="500"
+                            height="500">
+
+                    </a>
+
+                    <span class="flash-sale-card__label">
+
+                        <span aria-hidden="true">
+
+                            ⚡
+
+                        </span>
+
+                        Flash Deal
+
+                    </span>
+
+                </div>
+
+                <div class="flash-sale-card__content">
+
+                    <p class="flash-sale-card__category">
+
+                        Rice & Grains
+
+                    </p>
+
+                    <h3 class="flash-sale-card__title">
+
+                        <a href="product-details.html?id=1">
+
+                            Premium Miniket Rice 25kg
+
+                        </a>
+
+                    </h3>
+
+                    <div
+                        class="flash-sale-card__rating"
+                        aria-label="Rated 4.8 out of 5">
+
+                        <span
+                            class="flash-sale-card__stars"
+                            aria-hidden="true">
+
+                            ★★★★★
+
+                        </span>
+
+                        <span class="flash-sale-card__reviews">
+
+                            4.8 (128 reviews)
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__price">
+
+                        <span class="flash-sale-card__price-current">
+
+                            ৳1,725
+
+                        </span>
+
+                        <span class="flash-sale-card__price-old">
+
+                            ৳2,300
+
+                        </span>
+
+                        <span class="flash-sale-card__saving">
+
+                            Save ৳575
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__stock">
+
+                        <div class="flash-sale-card__stock-info">
+
+                            <span class="flash-sale-card__sold">
+
+                                Sold: 72
+
+                            </span>
+
+                            <span class="flash-sale-card__available">
+
+                                Available: 28
+
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="flash-sale-card__progress"
+                            role="progressbar"
+                            aria-label="Premium Miniket Rice stock sold"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="72">
+
+                            <span
+                                class="flash-sale-card__progress-bar"
+                                style="--sale-progress:72%;">
+
+                            </span>
+
+                        </div>
+
+                        <p class="flash-sale-card__urgency">
+
+                            <span aria-hidden="true">
+
+                                🔥
+
+                            </span>
+
+                            Only 28 items left
+
+                        </p>
+
+                    </div>
+
+                    <div class="flash-sale-card__actions">
+
+                        <button
+                            class="flash-sale-card__cart"
+                            type="button"
+                            data-add-to-cart
+                            data-product-id="1"
+                            data-product-name="Premium Miniket Rice 25kg"
+                            data-product-price="1725"
+                            data-product-image="assets/images/products/rice.jpg">
+
+                            <span aria-hidden="true">
+
+                                🛒
+
+                            </span>
+
+                            Add to Cart
+
+                        </button>
+
+                        <button
+                            class="flash-sale-card__quick-view"
+                            type="button"
+                            aria-label="Quick view Premium Miniket Rice"
+                            data-quick-view
+                            data-product-id="1">
+
+                            <span aria-hidden="true">
+
+                                👁
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </article>
 
-            <!-- Item 2 -->
+            <!-- ======================================
+                 FLASH SALE PRODUCT 2
+            ======================================= -->
 
-            <article class="flash-card">
+            <article
+                class="flash-sale-card"
+                data-product-id="flash-product-2">
 
-                <img
-                    src="assets/images/products/basmati-rice.jpg"
-                    alt="Basmati Rice"
-                    loading="lazy"
-                >
+                <div class="flash-sale-card__media">
 
-                <h3>
+                    <span class="flash-sale-card__discount">
 
-                    Premium Basmati Rice
+                        -18%
 
-                </h3>
-
-                <p class="flash-card__price">
-
-                    <span class="new-price">
-                        ৳720
                     </span>
 
-                    <del>
-                        ৳850
-                    </del>
+                    <button
+                        class="flash-sale-card__wishlist"
+                        type="button"
+                        aria-label="Add Fresh Soybean Oil to wishlist"
+                        aria-pressed="false"
+                        data-wishlist-button>
 
-                </p>
+                        <span aria-hidden="true">
 
-                <button
-                    type="button"
-                    class="flash-card__button"
-                >
+                            ♡
 
-                    Add To Cart
+                        </span>
 
-                </button>
+                    </button>
+
+                    <a
+                        href="product-details.html?id=2"
+                        aria-label="View Fresh Soybean Oil details">
+
+                        <img
+                            class="flash-sale-card__image"
+                            src="assets/images/products/oil.jpg"
+                            alt="Fresh Soybean Oil 5 litre bottle"
+                            loading="lazy"
+                            decoding="async"
+                            width="500"
+                            height="500">
+
+                    </a>
+
+                    <span class="flash-sale-card__label">
+
+                        <span aria-hidden="true">
+
+                            ⚡
+
+                        </span>
+
+                        Flash Deal
+
+                    </span>
+
+                </div>
+
+                <div class="flash-sale-card__content">
+
+                    <p class="flash-sale-card__category">
+
+                        Cooking Essentials
+
+                    </p>
+
+                    <h3 class="flash-sale-card__title">
+
+                        <a href="product-details.html?id=2">
+
+                            Fresh Soybean Oil 5L
+
+                        </a>
+
+                    </h3>
+
+                    <div
+                        class="flash-sale-card__rating"
+                        aria-label="Rated 4.6 out of 5">
+
+                        <span
+                            class="flash-sale-card__stars"
+                            aria-hidden="true">
+
+                            ★★★★☆
+
+                        </span>
+
+                        <span class="flash-sale-card__reviews">
+
+                            4.6 (94 reviews)
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__price">
+
+                        <span class="flash-sale-card__price-current">
+
+                            ৳860
+
+                        </span>
+
+                        <span class="flash-sale-card__price-old">
+
+                            ৳1,050
+
+                        </span>
+
+                        <span class="flash-sale-card__saving">
+
+                            Save ৳190
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__stock">
+
+                        <div class="flash-sale-card__stock-info">
+
+                            <span class="flash-sale-card__sold">
+
+                                Sold: 64
+
+                            </span>
+
+                            <span class="flash-sale-card__available">
+
+                                Available: 36
+
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="flash-sale-card__progress"
+                            role="progressbar"
+                            aria-label="Fresh Soybean Oil stock sold"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="64">
+
+                            <span
+                                class="flash-sale-card__progress-bar"
+                                style="--sale-progress:64%;">
+
+                            </span>
+
+                        </div>
+
+                        <p class="flash-sale-card__urgency">
+
+                            <span aria-hidden="true">
+
+                                🔥
+
+                            </span>
+
+                            Selling quickly
+
+                        </p>
+
+                    </div>
+
+                    <div class="flash-sale-card__actions">
+
+                        <button
+                            class="flash-sale-card__cart"
+                            type="button"
+                            data-add-to-cart
+                            data-product-id="2"
+                            data-product-name="Fresh Soybean Oil 5L"
+                            data-product-price="860"
+                            data-product-image="assets/images/products/oil.jpg">
+
+                            <span aria-hidden="true">
+
+                                🛒
+
+                            </span>
+
+                            Add to Cart
+
+                        </button>
+
+                        <button
+                            class="flash-sale-card__quick-view"
+                            type="button"
+                            aria-label="Quick view Fresh Soybean Oil"
+                            data-quick-view
+                            data-product-id="2">
+
+                            <span aria-hidden="true">
+
+                                👁
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </article>
 
-            <!-- Item 3 -->
+            <!-- ======================================
+                 FLASH SALE PRODUCT 3
+            ======================================= -->
 
-            <article class="flash-card">
+            <article
+                class="flash-sale-card"
+                data-product-id="flash-product-3">
 
-                <img
-                    src="assets/images/products/egg.jpg"
-                    alt="Fresh Eggs"
-                    loading="lazy"
-                >
+                <div class="flash-sale-card__media">
 
-                <h3>
+                    <span class="flash-sale-card__discount">
 
-                    Fresh Eggs (12 pcs)
+                        -30%
 
-                </h3>
-
-                <p class="flash-card__price">
-
-                    <span class="new-price">
-                        ৳150
                     </span>
 
-                    <del>
-                        ৳180
-                    </del>
+                    <button
+                        class="flash-sale-card__wishlist"
+                        type="button"
+                        aria-label="Add Premium Fresh Apple to wishlist"
+                        aria-pressed="false"
+                        data-wishlist-button>
 
-                </p>
+                        <span aria-hidden="true">
 
-                <button
-                    type="button"
-                    class="flash-card__button"
-                >
+                            ♡
 
-                    Add To Cart
+                        </span>
 
-                </button>
+                    </button>
+
+                    <a
+                        href="product-details.html?id=3"
+                        aria-label="View Premium Fresh Apple details">
+
+                        <img
+                            class="flash-sale-card__image"
+                            src="assets/images/products/apple.jpg"
+                            alt="Premium red fresh apples"
+                            loading="lazy"
+                            decoding="async"
+                            width="500"
+                            height="500">
+
+                    </a>
+
+                    <span class="flash-sale-card__label">
+
+                        <span aria-hidden="true">
+
+                            ⚡
+
+                        </span>
+
+                        Flash Deal
+
+                    </span>
+
+                </div>
+
+                <div class="flash-sale-card__content">
+
+                    <p class="flash-sale-card__category">
+
+                        Fresh Fruits
+
+                    </p>
+
+                    <h3 class="flash-sale-card__title">
+
+                        <a href="product-details.html?id=3">
+
+                            Premium Fresh Apple 1kg
+
+                        </a>
+
+                    </h3>
+
+                    <div
+                        class="flash-sale-card__rating"
+                        aria-label="Rated 4.9 out of 5">
+
+                        <span
+                            class="flash-sale-card__stars"
+                            aria-hidden="true">
+
+                            ★★★★★
+
+                        </span>
+
+                        <span class="flash-sale-card__reviews">
+
+                            4.9 (76 reviews)
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__price">
+
+                        <span class="flash-sale-card__price-current">
+
+                            ৳280
+
+                        </span>
+
+                        <span class="flash-sale-card__price-old">
+
+                            ৳400
+
+                        </span>
+
+                        <span class="flash-sale-card__saving">
+
+                            Save ৳120
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__stock">
+
+                        <div class="flash-sale-card__stock-info">
+
+                            <span class="flash-sale-card__sold">
+
+                                Sold: 83
+
+                            </span>
+
+                            <span class="flash-sale-card__available">
+
+                                Available: 17
+
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="flash-sale-card__progress"
+                            role="progressbar"
+                            aria-label="Premium Fresh Apple stock sold"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="83">
+
+                            <span
+                                class="flash-sale-card__progress-bar"
+                                style="--sale-progress:83%;">
+
+                            </span>
+
+                        </div>
+
+                        <p class="flash-sale-card__urgency">
+
+                            <span aria-hidden="true">
+
+                                🔥
+
+                            </span>
+
+                            Only 17 items left
+
+                        </p>
+
+                    </div>
+
+                    <div class="flash-sale-card__actions">
+
+                        <button
+                            class="flash-sale-card__cart"
+                            type="button"
+                            data-add-to-cart
+                            data-product-id="3"
+                            data-product-name="Premium Fresh Apple 1kg"
+                            data-product-price="280"
+                            data-product-image="assets/images/products/apple.jpg">
+
+                            <span aria-hidden="true">
+
+                                🛒
+
+                            </span>
+
+                            Add to Cart
+
+                        </button>
+
+                        <button
+                            class="flash-sale-card__quick-view"
+                            type="button"
+                            aria-label="Quick view Premium Fresh Apple"
+                            data-quick-view
+                            data-product-id="3">
+
+                            <span aria-hidden="true">
+
+                                👁
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </article>
 
-            <!-- Item 4 -->
+            <!-- ======================================
+                 FLASH SALE PRODUCT 4
+            ======================================= -->
 
-            <article class="flash-card">
+            <article
+                class="flash-sale-card"
+                data-product-id="flash-product-4">
 
-                <img
-                    src="assets/images/products/tea.jpg"
-                    alt="Premium Tea"
-                    loading="lazy"
-                >
+                <div class="flash-sale-card__media">
 
-                <h3>
+                    <span class="flash-sale-card__discount">
 
-                    Premium Tea 500g
+                        -22%
 
-                </h3>
-
-                <p class="flash-card__price">
-
-                    <span class="new-price">
-                        ৳275
                     </span>
 
-                    <del>
-                        ৳330
-                    </del>
+                    <button
+                        class="flash-sale-card__wishlist"
+                        type="button"
+                        aria-label="Add Fresh Broiler Chicken to wishlist"
+                        aria-pressed="false"
+                        data-wishlist-button>
 
-                </p>
+                        <span aria-hidden="true">
 
-                <button
-                    type="button"
-                    class="flash-card__button"
-                >
+                            ♡
 
-                    Add To Cart
+                        </span>
 
-                </button>
+                    </button>
+
+                    <a
+                        href="product-details.html?id=4"
+                        aria-label="View Fresh Broiler Chicken details">
+
+                        <img
+                            class="flash-sale-card__image"
+                            src="assets/images/products/chicken.jpg"
+                            alt="Fresh Broiler Chicken one kilogram"
+                            loading="lazy"
+                            decoding="async"
+                            width="500"
+                            height="500">
+
+                    </a>
+
+                    <span class="flash-sale-card__label">
+
+                        <span aria-hidden="true">
+
+                            ⚡
+
+                        </span>
+
+                        Flash Deal
+
+                    </span>
+
+                </div>
+
+                <div class="flash-sale-card__content">
+
+                    <p class="flash-sale-card__category">
+
+                        Meat & Poultry
+
+                    </p>
+
+                    <h3 class="flash-sale-card__title">
+
+                        <a href="product-details.html?id=4">
+
+                            Fresh Broiler Chicken 1kg
+
+                        </a>
+
+                    </h3>
+
+                    <div
+                        class="flash-sale-card__rating"
+                        aria-label="Rated 4.7 out of 5">
+
+                        <span
+                            class="flash-sale-card__stars"
+                            aria-hidden="true">
+
+                            ★★★★★
+
+                        </span>
+
+                        <span class="flash-sale-card__reviews">
+
+                            4.7 (112 reviews)
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__price">
+
+                        <span class="flash-sale-card__price-current">
+
+                            ৳275
+
+                        </span>
+
+                        <span class="flash-sale-card__price-old">
+
+                            ৳350
+
+                        </span>
+
+                        <span class="flash-sale-card__saving">
+
+                            Save ৳75
+
+                        </span>
+
+                    </div>
+
+                    <div class="flash-sale-card__stock">
+
+                        <div class="flash-sale-card__stock-info">
+
+                            <span class="flash-sale-card__sold">
+
+                                Sold: 91
+
+                            </span>
+
+                            <span class="flash-sale-card__available">
+
+                                Available: 9
+
+                            </span>
+
+                        </div>
+
+                        <div
+                            class="flash-sale-card__progress"
+                            role="progressbar"
+                            aria-label="Fresh Broiler Chicken stock sold"
+                            aria-valuemin="0"
+                            aria-valuemax="100"
+                            aria-valuenow="91">
+
+                            <span
+                                class="flash-sale-card__progress-bar"
+                                style="--sale-progress:91%;">
+
+                            </span>
+
+                        </div>
+
+                        <p class="flash-sale-card__urgency">
+
+                            <span aria-hidden="true">
+
+                                🔥
+
+                            </span>
+
+                            Hurry! Only 9 items left
+
+                        </p>
+
+                    </div>
+
+                    <div class="flash-sale-card__actions">
+
+                        <button
+                            class="flash-sale-card__cart"
+                            type="button"
+                            data-add-to-cart
+                            data-product-id="4"
+                            data-product-name="Fresh Broiler Chicken 1kg"
+                            data-product-price="275"
+                            data-product-image="assets/images/products/chicken.jpg">
+
+                            <span aria-hidden="true">
+
+                                🛒
+
+                            </span>
+
+                            Add to Cart
+
+                        </button>
+
+                        <button
+                            class="flash-sale-card__quick-view"
+                            type="button"
+                            aria-label="Quick view Fresh Broiler Chicken"
+                            data-quick-view
+                            data-product-id="4">
+
+                            <span aria-hidden="true">
+
+                                👁
+
+                            </span>
+
+                        </button>
+
+                    </div>
+
+                </div>
 
             </article>
+
+        </div>
+
+        <!-- ==========================================
+             VIEW ALL FLASH DEALS
+        =========================================== -->
+
+        <div class="flash-sale__footer">
+
+            <a
+                href="products.html?sale=flash"
+                class="flash-sale__view-all">
+
+                View All Flash Deals
+
+                <span aria-hidden="true">
+
+                    →
+
+                </span>
+
+            </a>
 
         </div>
 
     </div>
 
 </section>
+
+
 
 <!-- ==========================================
      POPULAR BRANDS
