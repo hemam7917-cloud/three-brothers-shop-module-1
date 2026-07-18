@@ -778,19 +778,35 @@ Lesson 2 Part 2 Starts Here
 
         <!-- Hero Slider -->
 
-        <section class="hero-slider">
+<section
+    class="hero-slider"
+    aria-label="Featured Promotions"
+    aria-roledescription="carousel">
 
-            <div class="hero-slider__wrapper">
+            <div
+    class="hero-slider__wrapper"
+    role="group"
+    aria-live="polite">
 
                 <!-- Slide 1 -->
 
                 <article class="hero-slide active">
 
                     <img
-                        src="assets/images/hero/hero-1.jpg"
-                        alt="Fresh Grocery Collection">
+    src="images/banner1.jpg"
+    alt="Fresh groceries delivered to your doorstep"
+    loading="eager"
+    fetchpriority="high"
+    decoding="async"
+    width="1200"
+    height="520">
 
-                    <div class="hero-slide__content">
+                   <div
+    class="hero-slide active"
+    role="group"
+    aria-roledescription="slide"
+    aria-label="1 of 3"
+    aria-hidden="false">
 
                         <h1>
 
@@ -806,7 +822,9 @@ Lesson 2 Part 2 Starts Here
 
                         </p>
 
-                        <a href="#" class="hero-button">
+                        <a
+    class="hero-button"
+    aria-label="Shop Now">
 
                             Shop Now
 
@@ -820,11 +838,20 @@ Lesson 2 Part 2 Starts Here
 
                 <article class="hero-slide">
 
-                    <img
-                        src="assets/images/hero/hero-2.jpg"
-                        alt="Daily Essentials">
+                   <img
+    src="images/banner2.jpg"
+    alt="Special discount on daily essentials"
+    loading="lazy"
+    decoding="async"
+    width="1200"
+    height="520">
 
-                    <div class="hero-slide__content">
+                    <div
+    class="hero-slide"
+    role="group"
+    aria-roledescription="slide"
+    aria-label="2 of 3"
+    aria-hidden="true">
 
                         <h2>
 
@@ -854,10 +881,19 @@ Lesson 2 Part 2 Starts Here
                 <article class="hero-slide">
 
                     <img
-                        src="assets/images/hero/hero-3.jpg"
-                        alt="Best Deals">
+    src="images/banner3.jpg"
+    alt="Premium quality fruits and vegetables"
+    loading="lazy"
+    decoding="async"
+    width="1200"
+    height="520">
 
-                    <div class="hero-slide__content">
+                   <div
+    class="hero-slide"
+    role="group"
+    aria-roledescription="slide"
+    aria-label="3 of 3"
+    aria-hidden="true">
 
                         <h2>
 
@@ -907,432 +943,416 @@ Lesson 2 Part 2 Starts Here
 
             <!-- Pagination -->
 
-            <div class="hero-slider__pagination">
+           <div
+    class="hero-slider__pagination"
+    role="tablist"
+    aria-label="Hero Slider Navigation">
 
                 <button
-                    class="hero-dot active"
-                    type="button"
-                    aria-label="Slide 1">
-                </button>
+    class="hero-dot active"
+    type="button"
+    role="tab"
+    aria-label="Go to Slide 1"
+    aria-selected="true">
+</button>
 
                 <button
-                    class="hero-dot"
-                    type="button"
-                    aria-label="Slide 2">
-                </button>
+    class="hero-dot"
+    type="button"
+    role="tab"
+    aria-label="Go to Slide 2"
+    aria-selected="false">
+</button>
 
                 <button
-                    class="hero-dot"
-                    type="button"
-                    aria-label="Slide 3">
-                </button>
+    class="hero-dot"
+    type="button"
+    role="tab"
+    aria-label="Go to Slide 3"
+    aria-selected="false">
+</button>
 
             </div>
 
         </section>
 
         <!-- Right Promotion -->
+<!-- ==========================================================
+     PROMO SECTION
+========================================================== -->
 
-        <aside class="hero-promo">
+<section class="promo-section">
 
-            <article class="promo-card">
-
-                <h3>
-
-                    Free Delivery
-
-                </h3>
-
-                <p>
-
-                    Orders over ৳1000
-
-                </p>
-
-            </article>
-
-            <article class="promo-card">
-
-                <h3>
-
-                    Flash Sale
-
-                </h3>
-
-                <p>
-
-                    Up to 50% OFF
-
-                </p>
-
-            </article>
-
-            <article class="promo-card">
-
-                <h3>
-
-                    Secure Payment
-
-                </h3>
-
-                <p>
-
-                    100% Safe Checkout
-
-                </p>
-
-            </article>
-
-        </aside>
-
-    </div>
-
-</section>
-
-<!-- ==========================================
-     FEATURED CATEGORIES
-========================================== -->
-
-<section
-    class="section categories-section"
-    aria-labelledby="featured-categories-title"
->
     <div class="container">
 
-        <header class="section-header">
+        <div class="promo-grid">
 
-            <div class="section-header__content">
+            <!-- ==========================
+                 CARD 1
+            =========================== -->
 
-                <p class="section-header__eyebrow">
-                    Shop by category
-                </p>
+            <article class="promo-card">
 
-                <h2
-                    class="section-header__title"
-                    id="featured-categories-title"
-                >
-                    Featured Categories
-                </h2>
+                <div class="promo-card__image">
 
-                <p class="section-header__description">
-                    Explore popular product categories and find your
-                    everyday essentials quickly.
-                </p>
+                    <img
+                        src="assets/images/promo/promo-01.jpg"
+                        alt="Fresh Fruits and Vegetables"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400">
 
-            </div>
+                </div>
 
-            <a
-                class="section-header__link"
-                href="pages/category.html"
-                aria-label="View all product categories"
-            >
-                View All Categories
-                <span aria-hidden="true">&rarr;</span>
-            </a>
+                <div class="promo-card__content">
 
-        </header>
+                    <span class="promo-card__badge">
+                        Fresh Collection
+                    </span>
 
-        <div class="category-grid">
+                    <h2 class="promo-card__title">
+                        Fresh Fruits & Vegetables
+                    </h2>
 
-            <!-- Category 1 -->
+                    <p class="promo-card__description">
+                        Shop premium quality fresh vegetables and seasonal fruits
+                        at the best prices with fast home delivery.
+                    </p>
 
-            <article class="category-card">
+                    <a
+                        href="products.html?category=fruits"
+                        class="promo-card__button"
+                        aria-label="Shop Fresh Fruits">
 
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=groceries"
-                    aria-label="Browse groceries"
-                >
-                    <div class="category-card__image-wrapper">
+                        Shop Now →
 
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/groceries.jpg"
-                            alt="Assorted grocery products"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
+                    </a>
 
-                    </div>
-
-                    <div class="category-card__content">
-
-                        <h3 class="category-card__title">
-                            Groceries
-                        </h3>
-
-                        <p class="category-card__meta">
-                            120+ Products
-                        </p>
-
-                    </div>
-                </a>
+                </div>
 
             </article>
 
-            <!-- Category 2 -->
+            <!-- ==========================
+                 CARD 2
+            =========================== -->
 
-            <article class="category-card">
+            <article class="promo-card">
 
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=vegetables"
-                    aria-label="Browse fresh vegetables"
-                >
-                    <div class="category-card__image-wrapper">
+                <div class="promo-card__image">
 
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/vegetables.jpg"
-                            alt="Fresh vegetables arranged together"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
+                    <img
+                        src="assets/images/promo/promo-02.jpg"
+                        alt="Daily Grocery Essentials"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400">
 
-                    </div>
+                </div>
 
-                    <div class="category-card__content">
+                <div class="promo-card__content">
 
-                        <h3 class="category-card__title">
-                            Fresh Vegetables
-                        </h3>
+                    <span class="promo-card__badge">
+                        Daily Needs
+                    </span>
 
-                        <p class="category-card__meta">
-                            80+ Products
-                        </p>
+                    <h2 class="promo-card__title">
+                        Grocery Essentials
+                    </h2>
 
-                    </div>
-                </a>
+                    <p class="promo-card__description">
+                        Rice, oil, flour, spices and everything your family needs
+                        every day in one convenient place.
+                    </p>
 
-            </article>
+                    <a
+                        href="products.html?category=grocery"
+                        class="promo-card__button"
+                        aria-label="Shop Grocery">
 
-            <!-- Category 3 -->
+                        Shop Now →
 
-            <article class="category-card">
+                    </a>
 
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=fruits"
-                    aria-label="Browse fresh fruits"
-                >
-                    <div class="category-card__image-wrapper">
-
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/fruits.jpg"
-                            alt="Colorful fresh fruits"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                    <div class="category-card__content">
-
-                        <h3 class="category-card__title">
-                            Fresh Fruits
-                        </h3>
-
-                        <p class="category-card__meta">
-                            60+ Products
-                        </p>
-
-                    </div>
-                </a>
+                </div>
 
             </article>
 
-            <!-- Category 4 -->
+            <!-- ==========================
+                 CARD 3
+            =========================== -->
 
-            <article class="category-card">
+            <article class="promo-card">
 
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=rice"
-                    aria-label="Browse rice and grains"
-                >
-                    <div class="category-card__image-wrapper">
+                <div class="promo-card__image">
 
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/rice.jpg"
-                            alt="Rice and grain products"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
+                    <img
+                        src="assets/images/promo/promo-03.jpg"
+                        alt="Special Discounts"
+                        loading="lazy"
+                        decoding="async"
+                        width="600"
+                        height="400">
 
-                    </div>
+                </div>
 
-                    <div class="category-card__content">
+                <div class="promo-card__content">
 
-                        <h3 class="category-card__title">
-                            Rice &amp; Grains
-                        </h3>
+                    <span class="promo-card__badge">
+                        Limited Offer
+                    </span>
 
-                        <p class="category-card__meta">
-                            40+ Products
-                        </p>
+                    <h2 class="promo-card__title">
+                        Save Up To 40% Off
+                    </h2>
 
-                    </div>
-                </a>
+                    <p class="promo-card__description">
+                        Discover exclusive deals on selected products for a limited
+                        time and enjoy more savings every day.
+                    </p>
 
-            </article>
+                    <a
+                        href="products.html?offer=special"
+                        class="promo-card__button"
+                        aria-label="View Special Offers">
 
-            <!-- Category 5 -->
+                        Explore Offers →
 
-            <article class="category-card">
+                    </a>
 
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=cooking-oil"
-                    aria-label="Browse cooking oil"
-                >
-                    <div class="category-card__image-wrapper">
-
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/cooking-oil.jpg"
-                            alt="Cooking oil bottles"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                    <div class="category-card__content">
-
-                        <h3 class="category-card__title">
-                            Cooking Oil
-                        </h3>
-
-                        <p class="category-card__meta">
-                            35+ Products
-                        </p>
-
-                    </div>
-                </a>
-
-            </article>
-
-            <!-- Category 6 -->
-
-            <article class="category-card">
-
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=beverages"
-                    aria-label="Browse beverages"
-                >
-                    <div class="category-card__image-wrapper">
-
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/beverages.jpg"
-                            alt="Cold beverages and drinks"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                    <div class="category-card__content">
-
-                        <h3 class="category-card__title">
-                            Beverages
-                        </h3>
-
-                        <p class="category-card__meta">
-                            70+ Products
-                        </p>
-
-                    </div>
-                </a>
-
-            </article>
-
-            <!-- Category 7 -->
-
-            <article class="category-card">
-
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=snacks"
-                    aria-label="Browse snacks"
-                >
-                    <div class="category-card__image-wrapper">
-
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/snacks.jpg"
-                            alt="Biscuits, chips and snack products"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                    <div class="category-card__content">
-
-                        <h3 class="category-card__title">
-                            Snacks
-                        </h3>
-
-                        <p class="category-card__meta">
-                            95+ Products
-                        </p>
-
-                    </div>
-                </a>
-
-            </article>
-
-            <!-- Category 8 -->
-
-            <article class="category-card">
-
-                <a
-                    class="category-card__link"
-                    href="pages/category.html?category=personal-care"
-                    aria-label="Browse personal care products"
-                >
-                    <div class="category-card__image-wrapper">
-
-                        <img
-                            class="category-card__image"
-                            src="assets/images/categories/personal-care.jpg"
-                            alt="Personal care and hygiene products"
-                            width="320"
-                            height="240"
-                            loading="lazy"
-                        >
-
-                    </div>
-
-                    <div class="category-card__content">
-
-                        <h3 class="category-card__title">
-                            Personal Care
-                        </h3>
-
-                        <p class="category-card__meta">
-                            55+ Products
-                        </p>
-
-                    </div>
-                </a>
+                </div>
 
             </article>
 
         </div>
 
     </div>
+
+</section>
+
+
+<!-- ==========================================================
+     FEATURED CATEGORIES
+========================================================== -->
+
+<section
+    class="categories-section"
+    aria-labelledby="featured-categories-title">
+
+    <div class="container">
+
+        <!-- ==========================
+             SECTION HEADER
+        =========================== -->
+
+        <header class="categories-section__header">
+
+            <div>
+
+                <h2
+                    id="featured-categories-title"
+                    class="categories-section__title">
+
+                    Featured Categories
+
+                </h2>
+
+                <p class="categories-section__subtitle">
+
+                    Browse products by category and discover
+                    everything you need in one place.
+
+                </p>
+
+            </div>
+
+        </header>
+
+        <!-- ==========================
+             CATEGORY GRID
+        =========================== -->
+
+        <div class="categories-grid">
+
+            <!-- CATEGORY 1 -->
+
+            <a
+                href="products.html?category=rice"
+                class="category-card"
+                aria-label="Browse Rice Products">
+
+                <div class="category-card__icon">
+
+                    <img
+                        src="assets/images/categories/rice.png"
+                        alt="Rice"
+                        loading="lazy"
+                        decoding="async"
+                        width="64"
+                        height="64">
+
+                </div>
+
+                <h3 class="category-card__title">
+                    Rice
+                </h3>
+
+                <p class="category-card__count">
+                    120 Products
+                </p>
+
+            </a>
+
+            <!-- CATEGORY 2 -->
+
+            <a
+                href="products.html?category=vegetables"
+                class="category-card"
+                aria-label="Browse Vegetables">
+
+                <div class="category-card__icon">
+
+                    <img
+                        src="assets/images/categories/vegetables.png"
+                        alt="Vegetables"
+                        loading="lazy"
+                        decoding="async"
+                        width="64"
+                        height="64">
+
+                </div>
+
+                <h3 class="category-card__title">
+                    Vegetables
+                </h3>
+
+                <p class="category-card__count">
+                    96 Products
+                </p>
+
+            </a>
+
+            <!-- CATEGORY 3 -->
+
+            <a
+                href="products.html?category=fruits"
+                class="category-card"
+                aria-label="Browse Fruits">
+
+                <div class="category-card__icon">
+
+                    <img
+                        src="assets/images/categories/fruits.png"
+                        alt="Fruits"
+                        loading="lazy"
+                        decoding="async"
+                        width="64"
+                        height="64">
+
+                </div>
+
+                <h3 class="category-card__title">
+                    Fruits
+                </h3>
+
+                <p class="category-card__count">
+                    84 Products
+                </p>
+
+            </a>
+
+            <!-- CATEGORY 4 -->
+
+            <a
+                href="products.html?category=fish-meat"
+                class="category-card"
+                aria-label="Browse Fish and Meat">
+
+                <div class="category-card__icon">
+
+                    <img
+                        src="assets/images/categories/fish.png"
+                        alt="Fish & Meat"
+                        loading="lazy"
+                        decoding="async"
+                        width="64"
+                        height="64">
+
+                </div>
+
+                <h3 class="category-card__title">
+                    Fish & Meat
+                </h3>
+
+                <p class="category-card__count">
+                    58 Products
+                </p>
+
+            </a>
+
+            <!-- CATEGORY 5 -->
+
+            <a
+                href="products.html?category=dairy"
+                class="category-card"
+                aria-label="Browse Dairy Products">
+
+                <div class="category-card__icon">
+
+                    <img
+                        src="assets/images/categories/dairy.png"
+                        alt="Dairy"
+                        loading="lazy"
+                        decoding="async"
+                        width="64"
+                        height="64">
+
+                </div>
+
+                <h3 class="category-card__title">
+                    Dairy
+                </h3>
+
+                <p class="category-card__count">
+                    47 Products
+                </p>
+
+            </a>
+
+            <!-- CATEGORY 6 -->
+
+            <a
+                href="products.html?category=beverages"
+                class="category-card"
+                aria-label="Browse Beverages">
+
+                <div class="category-card__icon">
+
+                    <img
+                        src="assets/images/categories/beverages.png"
+                        alt="Beverages"
+                        loading="lazy"
+                        decoding="async"
+                        width="64"
+                        height="64">
+
+                </div>
+
+                <h3 class="category-card__title">
+                    Beverages
+                </h3>
+
+                <p class="category-card__count">
+                    102 Products
+                </p>
+
+            </a>
+
+        </div>
+
+    </div>
+
 </section>
 
 <!-- ==========================================
