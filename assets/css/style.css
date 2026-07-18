@@ -3904,3 +3904,816 @@ background:rgba(248,86,6,.15);
 /* =========================================================
    HERO SIDEBAR CSS COMPLETED
 ========================================================= */
+
+/* =========================================================
+   MODULE 1 — LESSON 4
+   PART 4A
+   PROFESSIONAL HERO SLIDER LAYOUT
+========================================================= */
+
+/* ==========================================
+   HERO SLIDER
+========================================== */
+
+.hero-slider{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:18px;
+
+    background:#ffffff;
+
+    min-height:520px;
+
+    box-shadow:
+        0 12px 40px rgba(0,0,0,.08);
+
+}
+
+
+/* ==========================================
+   WRAPPER
+========================================== */
+
+.hero-slider__wrapper{
+
+    position:relative;
+
+    width:100%;
+
+    height:100%;
+
+}
+
+
+/* ==========================================
+   SLIDE
+========================================== */
+
+.hero-slide{
+
+    position:absolute;
+
+    inset:0;
+
+    opacity:0;
+
+    visibility:hidden;
+
+    transition:
+        opacity .7s ease,
+        visibility .7s ease;
+
+}
+
+
+/* ACTIVE */
+
+.hero-slide.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+    z-index:2;
+
+}
+
+
+/* ==========================================
+   IMAGE
+========================================== */
+
+.hero-slide img{
+
+    width:100%;
+
+    height:520px;
+
+    object-fit:cover;
+
+    display:block;
+
+}
+
+
+/* ==========================================
+   CONTENT
+========================================== */
+
+.hero-slide__content{
+
+    position:absolute;
+
+    left:60px;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    max-width:520px;
+
+    color:#ffffff;
+
+    z-index:5;
+
+}
+
+
+/* TITLE */
+
+.hero-slide__content h1,
+.hero-slide__content h2{
+
+    font-size:3rem;
+
+    font-weight:800;
+
+    line-height:1.2;
+
+    margin-bottom:18px;
+
+}
+
+
+/* DESCRIPTION */
+
+.hero-slide__content p{
+
+    font-size:1.08rem;
+
+    line-height:1.7;
+
+    margin-bottom:30px;
+
+    opacity:.95;
+
+}
+
+
+/* ==========================================
+   BUTTON
+========================================== */
+
+.hero-button{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:15px 34px;
+
+    border-radius:999px;
+
+    background:var(--color-primary,#f85606);
+
+    color:#ffffff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:
+        background-color .25s ease,
+        transform .25s ease;
+
+}
+
+.hero-button:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+/* ==========================================
+   DARK OVERLAY
+========================================== */
+
+.hero-slide::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.55),
+            rgba(0,0,0,.15),
+            rgba(0,0,0,0)
+        );
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:992px){
+
+.hero-slider{
+
+min-height:430px;
+
+}
+
+.hero-slide img{
+
+height:430px;
+
+}
+
+.hero-slide__content{
+
+left:40px;
+
+max-width:420px;
+
+}
+
+.hero-slide__content h1,
+.hero-slide__content h2{
+
+font-size:2.3rem;
+
+}
+
+}
+
+@media (max-width:768px){
+
+.hero-slider{
+
+border-radius:12px;
+
+min-height:360px;
+
+}
+
+.hero-slide img{
+
+height:360px;
+
+}
+
+.hero-slide__content{
+
+left:24px;
+
+right:24px;
+
+max-width:none;
+
+}
+
+.hero-slide__content h1,
+.hero-slide__content h2{
+
+font-size:1.8rem;
+
+}
+
+.hero-slide__content p{
+
+font-size:.95rem;
+
+}
+
+}
+
+@media (max-width:480px){
+
+.hero-slide img{
+
+height:300px;
+
+}
+
+.hero-slide__content{
+
+left:18px;
+
+right:18px;
+
+}
+
+.hero-button{
+
+width:100%;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1 — LESSON 4
+   PART 4B STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1 — LESSON 4
+   PART 4B
+   HERO SLIDER CONTROLS
+========================================================= */
+
+/* ==========================================
+   PREVIOUS / NEXT BUTTONS
+========================================== */
+
+.hero-slider__prev,
+.hero-slider__next{
+
+    position:absolute;
+
+    top:50%;
+
+    transform:translateY(-50%);
+
+    width:52px;
+
+    height:52px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    display:grid;
+
+    place-items:center;
+
+    font-size:1.25rem;
+
+    font-weight:700;
+
+    color:#ffffff;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    -webkit-backdrop-filter:blur(10px);
+
+    transition:
+        background-color .25s ease,
+        transform .25s ease,
+        box-shadow .25s ease,
+        opacity .25s ease;
+
+    opacity:0;
+
+    z-index:20;
+
+}
+
+
+/* POSITION */
+
+.hero-slider__prev{
+
+    left:22px;
+
+}
+
+.hero-slider__next{
+
+    right:22px;
+
+}
+
+
+/* SHOW ON HOVER */
+
+.hero-slider:hover .hero-slider__prev,
+.hero-slider:hover .hero-slider__next{
+
+    opacity:1;
+
+}
+
+
+/* HOVER */
+
+.hero-slider__prev:hover,
+.hero-slider__next:hover{
+
+    background:var(--color-primary,#f85606);
+
+    transform:
+        translateY(-50%)
+        scale(1.08);
+
+    box-shadow:
+
+        0 10px 24px rgba(248,86,6,.35);
+
+}
+
+
+/* ACTIVE */
+
+.hero-slider__prev:active,
+.hero-slider__next:active{
+
+    transform:
+        translateY(-50%)
+        scale(.96);
+
+}
+
+
+/* KEYBOARD */
+
+.hero-slider__prev:focus-visible,
+.hero-slider__next:focus-visible{
+
+    outline:3px solid rgba(248,86,6,.30);
+
+    outline-offset:3px;
+
+}
+
+
+/* ==========================================
+   PAGINATION
+========================================== */
+
+.hero-slider__pagination{
+
+    position:absolute;
+
+    left:50%;
+
+    bottom:24px;
+
+    transform:translateX(-50%);
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    z-index:25;
+
+}
+
+
+/* DOT */
+
+.hero-dot{
+
+    width:12px;
+
+    height:12px;
+
+    border:none;
+
+    border-radius:50%;
+
+    cursor:pointer;
+
+    background:rgba(255,255,255,.55);
+
+    transition:
+        width .25s ease,
+        background-color .25s ease,
+        transform .25s ease;
+
+}
+
+
+/* ACTIVE DOT */
+
+.hero-dot.active{
+
+    width:34px;
+
+    border-radius:999px;
+
+    background:var(--color-primary,#f85606);
+
+}
+
+
+/* HOVER */
+
+.hero-dot:hover{
+
+    transform:scale(1.18);
+
+    background:#ffffff;
+
+}
+
+
+/* FOCUS */
+
+.hero-dot:focus-visible{
+
+    outline:3px solid rgba(248,86,6,.30);
+
+    outline-offset:3px;
+
+}
+
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media (max-width:768px){
+
+.hero-slider__prev,
+.hero-slider__next{
+
+width:44px;
+
+height:44px;
+
+font-size:1rem;
+
+opacity:1;
+
+}
+
+.hero-slider__prev{
+
+left:12px;
+
+}
+
+.hero-slider__next{
+
+right:12px;
+
+}
+
+.hero-slider__pagination{
+
+bottom:16px;
+
+gap:10px;
+
+}
+
+.hero-dot{
+
+width:10px;
+
+height:10px;
+
+}
+
+.hero-dot.active{
+
+width:28px;
+
+}
+
+}
+
+
+@media (max-width:480px){
+
+.hero-slider__prev,
+.hero-slider__next{
+
+width:40px;
+
+height:40px;
+
+}
+
+.hero-slider__pagination{
+
+bottom:12px;
+
+}
+
+}
+
+/* =========================================================
+   MODULE 1 — LESSON 4
+   PART 4C STARTS BELOW
+========================================================= */
+
+/* =========================================================
+   MODULE 1 — LESSON 4
+   PART 4D
+   ADVANCED HERO SLIDER EFFECTS
+========================================================= */
+
+
+/* ==========================================
+   GPU ACCELERATION
+========================================== */
+
+.hero-slider,
+.hero-slide,
+.hero-slide img{
+
+    transform:translateZ(0);
+
+    backface-visibility:hidden;
+
+    will-change:transform,opacity;
+
+}
+
+
+/* ==========================================
+   IMAGE ZOOM EFFECT
+========================================== */
+
+.hero-slide img{
+
+    transform:scale(1);
+
+    transition:
+        transform 7s linear;
+
+}
+
+
+/* ACTIVE SLIDE */
+
+.hero-slide.active img{
+
+    transform:scale(1.08);
+
+}
+
+
+/* ==========================================
+   CONTENT ANIMATION
+========================================== */
+
+.hero-slide__content{
+
+    opacity:0;
+
+    transform:
+        translateY(-50%)
+        translateX(-40px);
+
+    transition:
+
+        opacity .8s ease,
+
+        transform .8s ease;
+
+}
+
+
+/* ACTIVE CONTENT */
+
+.hero-slide.active .hero-slide__content{
+
+    opacity:1;
+
+    transform:
+        translateY(-50%)
+        translateX(0);
+
+}
+
+
+/* ==========================================
+   BUTTON ANIMATION
+========================================== */
+
+.hero-slide.active .hero-button{
+
+    animation:
+        heroButtonFloat
+        2.5s ease-in-out infinite;
+
+}
+
+
+/* ==========================================
+   BUTTON KEYFRAMES
+========================================== */
+
+@keyframes heroButtonFloat{
+
+0%{
+
+transform:translateY(0);
+
+}
+
+50%{
+
+transform:translateY(-4px);
+
+}
+
+100%{
+
+transform:translateY(0);
+
+}
+
+}
+
+
+/* ==========================================
+   IMAGE RENDERING
+========================================== */
+
+.hero-slide img{
+
+    image-rendering:auto;
+
+}
+
+
+/* ==========================================
+   LAZY LOADING READY
+========================================== */
+
+.hero-slide img[loading="lazy"]{
+
+    opacity:1;
+
+}
+
+
+/* ==========================================
+   PERFORMANCE
+========================================== */
+
+.hero-slide{
+
+    contain:layout paint;
+
+}
+
+
+/* ==========================================
+   REDUCED MOTION
+========================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+.hero-slide,
+.hero-slide img,
+.hero-slide__content,
+.hero-button{
+
+animation:none !important;
+
+transition:none !important;
+
+transform:none !important;
+
+}
+
+}
+
+
+/* ==========================================
+   MOBILE
+========================================== */
+
+@media (max-width:768px){
+
+.hero-slide.active img{
+
+transform:scale(1.04);
+
+}
+
+}
+
+
+/* ==========================================
+   SMALL MOBILE
+========================================== */
+
+@media (max-width:480px){
+
+.hero-slide__content{
+
+transition-duration:.5s;
+
+}
+
+}
+
+
+/* =========================================================
+   MODULE 1 — LESSON 4
+   PART 4E STARTS BELOW
+========================================================= */
